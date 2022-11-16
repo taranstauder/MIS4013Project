@@ -3,6 +3,6 @@
 
 <br>
 <div class="display-5">
-  <p>Thank you for visiting my HW4 pages!</p>
+  <p>Thank you for visiting our project page!</p>
   
 </div>
