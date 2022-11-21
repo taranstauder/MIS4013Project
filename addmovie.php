@@ -9,7 +9,6 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Movie</th>
       <th>Genre</th>
       <th>Title</th>
       <th>Year</th>
@@ -81,10 +80,22 @@ $conn->close();
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
-                  <label for="moviename" class="form-label">Name</label>
+                  <label for="moviename" class="form-label">Enter the genre</label>
                   <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="iName">
                   <div id="nameHelp" class="form-text">Enter the movie's name.</div>
                 </div>
+                <div class="mb-3">
+               <label for="ordersname" class="form-label">Enter the title</label>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+                </div>
+                <div class="mb-3">
+               <label for="ordersname" class="form-label">Enter the Year</label>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+              </div>
+                <div class="mb-3">
+               <label for="ordersname" class="form-label">Enter the Summary</label>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+              </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
               </form>
