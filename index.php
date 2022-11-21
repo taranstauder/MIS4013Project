@@ -38,11 +38,11 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["m.title"]?></td>
-    <td><?=$row["a.name"]?></td>
-    <td><?=$row["d.dirname"]?></td>
-    <td><?=$row["r.desctiption"]?></td>
-    <td><?=$row["r.rating"]?></td>
+    <td><?=$row["title"]?></td>
+    <td><?=$row["name"]?></td>
+    <td><?=$row["dirname"]?></td>
+    <td><?=$row["desctiption"]?></td>
+    <td><?=$row["rating"]?></td>
   </tr>
 <?php
   }
