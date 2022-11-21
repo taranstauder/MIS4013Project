@@ -31,7 +31,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-      $sqlAdd = "insert into Movie (genre, title, year, summary) value (?, ?, ?)";
+      $sqlAdd = "insert into Movie (genre, title, year, summary) value (?, ?, ?, ?)";
       $stmtAdd = $conn->prepare($sqlAdd);
       $stmtAdd->bind_param("siii", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
       $stmtAdd->execute();
