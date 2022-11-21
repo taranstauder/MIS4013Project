@@ -33,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Add':
       $sqlAdd = "insert into Movie (genre, title, year, summary) value (?, ?, ?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("siiI", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
+      $stmtAdd->bind_param("siii", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New movie added.</div>';
       break;
