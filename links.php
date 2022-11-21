@@ -9,7 +9,7 @@
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="review.php">Reviews</a>
 	  </li>
 	<li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="addmovie.php">Products</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="addmovie.php">Add Movies</a>
 	  </li>
 	<li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="suppliers.php">Suppliers</a>
