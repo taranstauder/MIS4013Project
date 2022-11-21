@@ -82,7 +82,6 @@ $conn->close();
                 <div class="mb-3">
                   <label for="moviename" class="form-label">Enter the genre</label>
                   <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="iName">
-                  <div id="nameHelp" class="form-text">Enter the movie's name.</div>
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the title</label>
