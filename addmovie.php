@@ -10,10 +10,10 @@
   <thead>
     <tr>
       <th>Movie</th>
-      <th>Starring Actor</th>
-      <th>Director</th>
-      <th>Review Description</th>
-      <th>Review Rating</th>
+      <th>Genre</th>
+      <th>Title</th>
+      <th>Year</th>
+      <th>Summary</th>
     </tr>
   </thead>
   <tbody>
@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 }
 
-$sql = "SELECT m.title, a.name, d.dirname, r.description, r.rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid";
+$sql = "SELECT genre, title, year, summary from Movie";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -49,11 +49,10 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
+    <td><?=$row["genre"]?></td>
     <td><?=$row["title"]?></td>
-    <td><?=$row["name"]?></td>
-    <td><?=$row["dirname"]?></td>
-    <td><?=$row["description"]?></td>
-    <td><?=$row["rating"]?></td>
+    <td><?=$row["year"]?></td>
+    <td><?=$row["summary"]?></td>
   </tr>
 
 <?php
@@ -67,23 +66,23 @@ $conn->close();
     </table>
       <br />
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addCustomer">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
         Add New
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="addCustomer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addCustomerLabel" aria-hidden="true">
+      <div class="modal fade" id="addMovie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMovieLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addCustomerLabel">Add Customer</h1>
+              <h1 class="modal-title fs-5" id="addMovieLabel">Add Movie</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
-                  <label for="customername" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="customerName" aria-describedby="nameHelp" name="iName">
+                  <label for="moviename" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="iName">
                   <div id="nameHelp" class="form-text">Enter the customer's name.</div>
                 </div>
                 <input type="hidden" name="saveType" value="Add">
