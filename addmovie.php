@@ -85,15 +85,15 @@ $conn->close();
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the title</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the Year</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
               </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the Summary</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
               </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
