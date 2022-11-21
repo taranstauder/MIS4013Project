@@ -31,9 +31,9 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-      $sqlAdd = "insert into Movie (genre, title, year, summary) value (?)";
+      $sqlAdd = "insert into Movie (genre, title, year, summary) value (?, ?, ?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("s", $_POST['iName']);
+      $stmtAdd->bind_param("siiI", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New movie added.</div>';
       break;
@@ -74,26 +74,26 @@ $conn->close();
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addMovieLabel">Add Movie</h1>
+              <h1 class="modal-title fs-5" id="addMovieLabel">Add a Movie</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <form method="post" action="">
                 <div class="mb-3">
                   <label for="moviename" class="form-label">Enter the genre</label>
-                  <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="iName">
+                  <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="genre">
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the title</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="titke" required>
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the Year</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="year" required>
               </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the Summary</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="summary" required>
               </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
