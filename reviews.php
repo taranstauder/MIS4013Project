@@ -73,21 +73,21 @@ if ($result->num_rows > 0) {
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["m.title"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editOrders<?=$row["order_id"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["order_id"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["order_id"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["order_id"]?>Label">Edit Review</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["title"]?>Label">Edit Review</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["order_id"]?>Name" class="form-label">Name</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["order_id"]?>Name" aria-describedby="editOrders<?=$row["order_id"]?>Help" name="iName" value="<?=$row['quantity']?>">
-                          <div id="editOrders<?=$row["order_id"]?>Help" class="form-text">Enter the quantity.</div>
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="iName" value="<?=$row['rtitle']?>">
+                          <div id="editOrders<?=$row["title"]?>Help" class="form-text">Enter the quantity.</div>
                         </div>
-                        <input type="hidden" name="iid" value="<?=$row['order_id']?>">
+                        <input type="hidden" name="iid" value="<?=$row['title']?>">
                        <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
