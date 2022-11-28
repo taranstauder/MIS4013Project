@@ -12,32 +12,26 @@
 <br>
 <br>
 
-<div class="swiper">
+<div class="swiper mySwiper">
+  <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-   <div class="swiper-slide">Slide 1</div>
-   <div class="swiper-slide">Slide 2</div>
-   <div class="swiper-slide">Slide 3</div>
-    ...
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="https://static5.depositphotos.com/1007168/472/i/600/depositphotos_4725473-stock-photo-hot-summer-sun-wearing-shades.jpg"></div>
+	<div class="swiper-slide"><img src="https://i.stack.imgur.com/cdCSj.jpg"></div>
   </div>
+  <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
-
- <div class="swiper-scrollbar"></div>
-</div>
-
-const swiper = new Swiper('.swiper', {
-  direction: 'vertical',
-  loop: true,
+</div>	
+<script>	  
+     var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+</script> 
   
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
 <?php include("footer.php");?>
 
 </body>
