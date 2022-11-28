@@ -2,7 +2,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Final Project </title>
     <div style="background-color: black; font-family: helvetica; text-align: center; color: white;" class="jumbotron">
-	    <h1>Movies Я Us</h1>
+	    <h1>Movies Я Us🎬</h1>
 	    
 	    <nav class="navbar navbar-expand-lg bg-clear" style="margin: auto;">
 <div class="container-fluid" style="font-family: helvetica;">
