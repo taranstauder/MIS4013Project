@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-success" role="alert">New review added.</div>';
       break;
     case 'Edit':
-      $sqlEdit = "update Review set rating=? where revid=?";
+      $sqlEdit = "update Review set rating=? where rtitle=?";
       $stmtEdit = $conn->prepare($sqlEdit);
       $stmtEdit->bind_param("ii", $_POST['rateedit'], $_POST['iid']);
       $stmtEdit->execute();
@@ -48,7 +48,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtDelete = $conn->prepare($sqlDelete);
       $stmtDelete->bind_param("s", $_POST['iid']);
       $stmtDelete->execute();
-      echo '<div class="alert alert-success" role="alert">review deleted.</div>';
+      echo '<div class="alert alert-success" role="alert">Review deleted.</div>';
       break;
   }
 
@@ -73,26 +73,26 @@ if ($result->num_rows > 0) {
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["title"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOrders<?=$row["rtitle"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["rtitle"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["title"]?>Label">Edit Review</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Review</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Title</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="titleedit" value="<?=$row['rtitle']?>">
+                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Title</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rtitle"]?>Help" name="titleedit" value="<?=$row['rtitle']?>">
                         </div>
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Description</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["description"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="descredit" value="<?=$row['description']?>">
+                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Description</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="descredit" value="<?=$row['description']?>">
                         </div>
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rating"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
                         </div>
                         <input type="hidden" name="iid" value="<?=$row['title']?>">
                        <input type="hidden" name="saveType" value="Edit">
