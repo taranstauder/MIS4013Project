@@ -73,11 +73,11 @@ if ($result->num_rows > 0) {
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["rtitle"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOrders<?=$row["rtitle"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["rtitle"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["title"]?>Label">Edit Review</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Review</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
