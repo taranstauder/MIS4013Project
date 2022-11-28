@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           
 <?php
-$sql = "SELECT m.title, rating, description, title from Review r join Movie m on m.movid=r.movid";
+$sql = "SELECT m.title, rating, description, r.title from Review r join Movie m on m.movid=r.movid";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -67,10 +67,12 @@ if ($result->num_rows > 0) {
          
           
           <tr>
-            <td><?=$row["order_id"]?></td>
-            <td><?=$row["quantity"]?></td>
+            <td><?=$row["m.title"]?></td>
+            <td><?=$row["rating"]?></td>
+            <td><?=$row["description"]?></td>
+            <td><?=$row["r.title"]?></td>
             <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["order_id"]?>">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["m.title"]?>">
                 Edit
               </button>
               <div class="modal fade" id="editOrders<?=$row["order_id"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["order_id"]?>Label" aria-hidden="true">
