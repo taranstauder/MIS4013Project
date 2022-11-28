@@ -139,8 +139,8 @@ if ($result->num_rows > 0) {
             <div class="modal-body">
              <form method="post" action="">
                  <div class="mb-3">
-                 <label for="ordersname" class="form-label">Pick the movie</label>
-                <select class="form-select" aria-label="Select Product" id="movadd" name="ordersname">
+                 <label for="movadd" class="form-label">Pick the movie</label>
+                <select class="form-select" aria-label="Select Product" id="movadd" name="movadd">
                    <?php
                     $instructorSql = "select * from Movie order by title";
                     $instructorResult = $conn->query($instructorSql);
