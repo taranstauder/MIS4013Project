@@ -70,7 +70,7 @@ if ($result->num_rows > 0) {
             <td><?=$row["description"]?></td>
             <td><?=$row["rating"]?></td>
             <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["m.title"]?>">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
                 Edit
               </button>
               <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["order_id"]?>Label" aria-hidden="true">
