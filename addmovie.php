@@ -84,16 +84,16 @@ $conn->close();
                   <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="genre">
                 </div>
                 <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the title</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="title" required>
+               <label for="title" class="form-label">Enter the title</label>
+               <input type="text" class="form-control" id="title" aria-describedby="nameHelp" name="title" required>
                 </div>
                 <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the Year</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="year" required>
+               <label for="year" class="form-label">Enter the Year</label>
+               <input type="text" class="form-control" id="year" aria-describedby="nameHelp" name="year" required>
               </div>
                 <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the Summary</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="summary" required>
+               <label for="summary" class="form-label">Enter the Summary</label>
+               <input type="text" class="form-control" id="summary" aria-describedby="nameHelp" name="summary" required>
               </div>
                 <input type="hidden" name="saveType" value="Add">
                 <button type="submit" class="btn btn-primary">Submit</button>
