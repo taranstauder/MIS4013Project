@@ -8,10 +8,10 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th>Genre</th>
-      <th>Title</th>
-      <th>Year</th>
-      <th>Summary</th>
+      <th>Movie Title</th>
+      <th>Review Title</th>
+      <th>Description</th>
+      <th>Rating</th>
     </tr>
   </thead>
   <tbody>
@@ -57,20 +57,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           
 <?php
-$sql = "SELECT m.title, rating, description, r.title from Review r join Movie m on m.movid=r.movid";
+$sql = "SELECT title, rating, description, rtitle from Review r join Movie m on m.movid=r.movid";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-?>
-         
-          
+?>  
           <tr>
-            <td><?=$row["m.title"]?></td>
-            <td><?=$row["rating"]?></td>
+            <td><?=$row["title"]?></td>
+            <td><?=$row["rtite"]?></td>
             <td><?=$row["description"]?></td>
-            <td><?=$row["r.title"]?></td>
+            <td><?=$row["rating"]?></td>
             <td>
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["m.title"]?>">
                 Edit
