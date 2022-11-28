@@ -13,8 +13,8 @@
         height: 100%;
       }
 
-      body {
-        background: #black;
+        body {
+        background: #eee;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
         font-size: 14px;
         color: #000;
@@ -30,7 +30,7 @@
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        background: #black;
+        background: #fff;
 
         /* Center slide text vertically */
         display: -webkit-box;
@@ -49,9 +49,21 @@
 
       .swiper-slide img {
         display: block;
-        width: auto;
-        height: auto;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
+      }
+
+      .swiper-slide {
+        width: 60%;
+      }
+
+      .swiper-slide:nth-child(2n) {
+        width: 40%;
+      }
+
+      .swiper-slide:nth-child(3n) {
+        width: 20%;
       }
     </style>
 </head>
