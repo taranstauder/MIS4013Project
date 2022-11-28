@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Edit':
       $sqlEdit = "update Review set rating=? where rtitle=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("is", $_POST['rateedit'], $_POST['iid']);
+      $stmtEdit->bind_param("ssis", $_POST['titleedit'],$_POST['descredit'],$_POST['rateedit'], $_POST['iid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Review edited.</div>';
       break;
