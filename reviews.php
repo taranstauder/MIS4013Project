@@ -30,21 +30,21 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-      $sqlAdd = "insert into Orders (quantity, product_id, customer_id) value (?, ?, ?)";
+      $sqlAdd = "insert into Review (movid, rating, description, rtitle) value (?, ?, ?,?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("sii", $_POST['iName'],$_POST['ordersname'],$_POST['cname']);
+      $stmtAdd->bind_param("iiss", $_POST['iName'],$_POST['ordersname'],$_POST['cname'],$_POST['cname']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New quantity added.</div>';
       break;
     case 'Edit':
-      $sqlEdit = "update Orders set quantity=? where order_id=?";
+      $sqlEdit = "update Review set quantity=? where order_id=?";
       $stmtEdit = $conn->prepare($sqlEdit);
       $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Order edited.</div>';
       break;
     case 'Delete':
-      $sqlDelete = "delete from Orders where order_id=?";
+      $sqlDelete = "delete from Review where revid=?";
       $stmtDelete = $conn->prepare($sqlDelete);
       $stmtDelete->bind_param("i", $_POST['iid']);
       $stmtDelete->execute();
