@@ -94,7 +94,7 @@ if ($result->num_rows > 0) {
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
                           <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
                         </div>
-                        <input type="hidden" name="iid" value="<?=$row['title']?>">
+                        <input type="hidden" name="iid" value="<?=$row['rtitle']?>">
                        <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
