@@ -37,9 +37,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-success" role="alert">New review added.</div>';
       break;
     case 'Edit':
-      $sqlEdit = "update Review set rating=? where revid=?";
+      $sqlEdit = "update Review set title=?, description=? rating=? where revid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ii", $_POST['iName'], $_POST['iid']);
+      $stmtEdit->bind_param("ssi", $_POST['titleedit'], $_POST['descredit'], $_POST['ratedit']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Review edited.</div>';
       break;
@@ -84,15 +84,15 @@ if ($result->num_rows > 0) {
                       <form method="post" action="">
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Title</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="iName" value="<?=$row['rtitle']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="titleedit" value="<?=$row['rtitle']?>">
                         </div>
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Description</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["description"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="iName" value="<?=$row['description']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["description"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="descredit" value="<?=$row['description']?>">
                         </div>
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rating"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="iName" value="<?=$row['rating']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["rating"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
                         </div>
                         <input type="hidden" name="iid" value="<?=$row['title']?>">
                        <input type="hidden" name="saveType" value="Edit">
