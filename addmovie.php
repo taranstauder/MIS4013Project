@@ -85,7 +85,7 @@ $conn->close();
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the title</label>
-               <input type="text" class="form-control"  aria-describedby="nameHelp" name="titke" required>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="title" required>
                 </div>
                 <div class="mb-3">
                <label for="ordersname" class="form-label">Enter the Year</label>
