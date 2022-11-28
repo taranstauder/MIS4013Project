@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Delete':
       $sqlDelete = "delete from Review where rtitle=?";
       $stmtDelete = $conn->prepare($sqlDelete);
-      $stmtDelete->bind_param("i", $_POST['iid']);
+      $stmtDelete->bind_param("s", $_POST['iid']);
       $stmtDelete->execute();
       echo '<div class="alert alert-success" role="alert">review deleted.</div>';
       break;
