@@ -126,46 +126,34 @@ if ($result->num_rows > 0) {
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addOrdersLabel">Enter the order's quantity:</h1>
+              <h1 class="modal-title fs-5" id="addOrdersLabel">Enter the reviews's title:</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
              <form method="post" action="">
               <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the Quantity</label>
+               <label for="ordersname" class="form-label">Enter the review's description</label>
+               <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
+              </div>
+               <div class="mb-3">
+               <label for="ordersname" class="form-label">Enter the movie's rating</label>
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="iName" required><br>
               </div>
               <div class="mb-3">
-                 <label for="ordersname" class="form-label">Pick the Product</label>
+                 <label for="ordersname" class="form-label">Pick the movie</label>
                 <select class="form-select" aria-label="Select Product" id="ordersname" name="ordersname">
                    <?php
-                    $instructorSql = "select * from Supplier order by sname";
+                    $instructorSql = "select * from Movie order by title";
                     $instructorResult = $conn->query($instructorSql);
                     while($instructorRow = $instructorResult->fetch_assoc()) {
      
                    ?>
-                    <option value="<?=$instructorRow['supplier_id']?>"><?=$instructorRow['sname']?></option>
+                    <option value="<?=$instructorRow['movid']?>"><?=$instructorRow['title']?></option>
                   <?php
                      }
                   ?>
                  </select>
                </div>
-               <div class="mb-3">
-                 <label for="cname" class="form-label">Pick the Customer</label>
-                 <select class="form-select" aria-label="Select Customer" id="cname" name="cname">
-                    <?php
-                      $instructorSql = "select * from Customer order by fname";
-                      $instructorResult = $conn->query($instructorSql);
-                      while($instructorRow = $instructorResult->fetch_assoc()) {
-     
-                   ?>
-                      <option value="<?=$instructorRow['customer_id']?>"><?=$instructorRow['fname']?></option>
-                    <?php
-                   }
-                  $conn->close();
-                   ?>
-                </select>
-                </div>
                  <input type="hidden" name="saveType" value="Add">
                  <button type="submit" class="btn btn-primary">Submit</button>
            </form>
