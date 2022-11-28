@@ -34,21 +34,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtAdd = $conn->prepare($sqlAdd);
       $stmtAdd->bind_param("iiss", $_POST['iName'],$_POST['ordersname'],$_POST['cname'],$_POST['cname']);
       $stmtAdd->execute();
-      echo '<div class="alert alert-success" role="alert">New quantity added.</div>';
+      echo '<div class="alert alert-success" role="alert">New review added.</div>';
       break;
     case 'Edit':
-      $sqlEdit = "update Review set quantity=? where order_id=?";
+      $sqlEdit = "update Review set rating=? where revid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("si", $_POST['iName'], $_POST['iid']);
+      $stmtEdit->bind_param("ii", $_POST['iName'], $_POST['iid']);
       $stmtEdit->execute();
-      echo '<div class="alert alert-success" role="alert">Order edited.</div>';
+      echo '<div class="alert alert-success" role="alert">Review edited.</div>';
       break;
     case 'Delete':
       $sqlDelete = "delete from Review where revid=?";
       $stmtDelete = $conn->prepare($sqlDelete);
       $stmtDelete->bind_param("i", $_POST['iid']);
       $stmtDelete->execute();
-      echo '<div class="alert alert-success" role="alert">Order deleted.</div>';
+      echo '<div class="alert alert-success" role="alert">review deleted.</div>';
       break;
   }
 
@@ -77,7 +77,7 @@ if ($result->num_rows > 0) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["order_id"]?>Label">Edit Order</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["order_id"]?>Label">Edit Review</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
