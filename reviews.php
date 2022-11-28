@@ -30,7 +30,7 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
     case 'Add':
-      $sqlAdd = "insert into Review (movid, rating, description, rtitle) value (?, ?,?)";
+      $sqlAdd = "insert into Review (movid, rating, description, rtitle) value (?,?, ?,?)";
       $stmtAdd = $conn->prepare($sqlAdd);
       $stmtAdd->bind_param("iiss",$_POST['movadd'],$_POST['rateadd'],$_POST['descadd'],$_POST['titleadd']);
       $stmtAdd->execute();
