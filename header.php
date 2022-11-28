@@ -4,8 +4,8 @@
     <div style="background-color: black; font-family: helvetica; text-align: center; color: white;" class="jumbotron">
 	    <h1>Movies Я Us</h1>
 	    
-	    <nav class="navbar navbar-expand-lg bg-clear">
-<div class="container-fluid" style="font-family: helvetica; margin: auto;">
+	    <nav class="navbar navbar-expand-lg bg-clear" style="margin: auto;">
+<div class="container-fluid" style="font-family: helvetica;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="index.php">Customers</a>
