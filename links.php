@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg bg-dark">
-<div class="container-fluid" style="color: white; font-family: helvetica;">
+/*<nav class="navbar navbar-expand-lg bg-dark">
+<div class="container-fluid" style="font-family: helvetica;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="index.php">Customers</a>
@@ -16,3 +16,4 @@
 	</ul>
 </div>
 </nav>
+*/
