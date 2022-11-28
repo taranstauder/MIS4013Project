@@ -5,7 +5,7 @@
 	    <h1>Movies Я Us</h1>
 	    
 	    <nav class="navbar navbar-expand-lg bg-clear">
-<div class="container-fluid" style="font-family: helvetica;">
+<div class="container-fluid" style="font-family: helvetica; text-align: center;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="index.php">Customers</a>
