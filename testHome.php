@@ -16,8 +16,8 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="https://static5.depositphotos.com/1007168/472/i/600/depositphotos_4725473-stock-photo-hot-summer-sun-wearing-shades.jpg"></div>
-	<div class="swiper-slide"><img src="https://i.stack.imgur.com/cdCSj.jpg"></div>
+    <div class="swiper-slide"><img src="https://static.toiimg.com/photo/msid-5348868/5348868.jpg?26276"></div>
+	<div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Smile_%282022_film%29.jpg/220px-Smile_%282022_film%29.jpg"></div>
   </div>
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
