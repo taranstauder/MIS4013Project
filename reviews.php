@@ -147,7 +147,7 @@ if ($result->num_rows > 0) {
                     while($instructorRow = $instructorResult->fetch_assoc()) {
      
                    ?>
-                    <option value="<?=$instructorRow['movid']?>"><?=$instructorRow['title']?></option>
+                    <option value="<?=$row['movid']?>"><?=$row['title']?></option>
                   <?php
                      }
                   ?>
