@@ -88,11 +88,11 @@ if ($result->num_rows > 0) {
                         </div>
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Description</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="iName" value="<?=$row['rtitle']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="iName" value="<?=$row['description']?>">
                         </div>
                         <div class="mb-3">
                           <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="iName" value="<?=$row['rtitle']?>">
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="iName" value="<?=$row['rating']?>">
                         </div>
                         <input type="hidden" name="iid" value="<?=$row['title']?>">
                        <input type="hidden" name="saveType" value="Edit">
