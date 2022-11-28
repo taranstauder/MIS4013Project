@@ -2,8 +2,6 @@
 <html>
 <head> <?php include("header.php");?></head>
 <body>
-
-<?php include("links.php");?>
 <br>
 <br>
 <table class="table table-striped">
