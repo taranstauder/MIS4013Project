@@ -3,8 +3,8 @@
     <title> Final Project </title>
     <div style="background-color: black; font-family: helvetica; text-align: center; color: white;" class="jumbotron">
 	    <h1>Movies Я Us</h1>
-    </div>
-<nav class="navbar navbar-expand-lg bg-dark">
+	    
+	    <nav class="navbar navbar-expand-lg bg-dark">
 <div class="container-fluid" style="font-family: helvetica;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
@@ -22,4 +22,5 @@
 	</ul>
 </div>
 </nav>
+    </div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
