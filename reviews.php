@@ -83,9 +83,16 @@ if ($result->num_rows > 0) {
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Name</label>
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Title</label>
                           <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="iName" value="<?=$row['rtitle']?>">
-                          <div id="editOrders<?=$row["title"]?>Help" class="form-text">Enter the quantity.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Review Description</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="iName" value="<?=$row['rtitle']?>">
+                        </div>
+                        <div class="mb-3">
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["title"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="iName" value="<?=$row['rtitle']?>">
                         </div>
                         <input type="hidden" name="iid" value="<?=$row['title']?>">
                        <input type="hidden" name="saveType" value="Edit">
