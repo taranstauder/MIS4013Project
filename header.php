@@ -1,7 +1,7 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Final Project </title>
-    <div style="background-color: black; font-family: monospace;" class="jumbotron">
+    <div style="background-color: black; font-family: helvetica; text-align: center; font-color: white;" class="jumbotron">
 	    <h1>E-Commerce 4013: Final Project</h1>
         <h2>Movies R Us</h2>
     </div>
