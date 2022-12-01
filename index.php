@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head> <?php include("header.php");?></head>
+<head> <?php include("header.php");?>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      .swiper {
+        width: auto;
+        height: auto;
+      }
+
+      .swiper-slide {
+        height: 600px;
+        width: 600px;
+      }
+
+      .swiper .swiper-slide {
+        height: auto;
+        line-height: auto;
+      }
+
+      //.swiper .swiper-slide:nth-child(2n) {
+        //height: 500px;
+        //line-height: 500px;
+      //}
+    </style>
+</head>
 <body>
 <br>
 <br>
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Movie</th>
-      <th>Starring Actor</th>
-      <th>Director</th>
-      <th>Review Description</th>
-      <th>Review Rating</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-$servername = "159.89.47.44";
-$username = "davyddov_davy0000";
-$password = "mis4013project";
-$dbname = "davyddov_mis4013project";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://static.toiimg.com/photo/msid-5348868/5348868.jpg?26276"></div>
+        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Smile_%282022_film%29.jpg/220px-Smile_%282022_film%29.jpg"></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/M/MV5BMjNiMDA0OWQtZGY1MC00N2EwLTkxNDYtYmVkNTk1NzJiZjFmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg"></div>
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/f86f23_b88ab82f5782484181d473d0ae304dd5~mv2.jpg/v1/fill/w_408,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/the-notebook1.jpg"></div>
+        <div class="swiper-slide"><img src="https://c8.alamy.com/comp/B3KR2H/star-wars-poster-for-the-1977-tcflucasfilm-film-B3KR2H.jpg"></div>
+        <div class="swiper-slide"><img src="https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg"></div>
+        <div class="swiper-slide"><img src="https://c8.alamy.com/comp/E5MCMW/elf-will-ferrell-2003-c-new-linecourtesy-everett-collection-E5MCMW.jpg"></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51iA8isg59L._AC_SY580_.jpg"></div>
+        <div class="swiper-slide"><img src="https://thumbs.dreamstime.com/b/harry-potter-warner-brothers-studio-tour-london-uk-entrance-where-filmed-actual-film-series-movie-poster-sorcerers-164168768.jpg"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
 
-$sql = "SELECT m.title, a.name, d.dirname, r.description, r.rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid";
-$result = $conn->query($sql);
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-?>
-  <tr>
-    <td><?=$row["title"]?></td>
-    <td><?=$row["name"]?></td>
-    <td><?=$row["dirname"]?></td>
-    <td><?=$row["description"]?></td>
-    <td><?=$row["rating"]?></td>
-  </tr>
-<?php
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
-  </tbody>
-    </table>
-  
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        slidesPerView: 3,
+        watchSlidesProgress: true,
+        spaceBetween: 30,
+        //slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 <?php include("footer.php");?>
 
 </body>
