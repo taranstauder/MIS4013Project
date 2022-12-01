@@ -6,6 +6,43 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+      <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: auto;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+      }
+
+      .swiper .swiper-slide {
+        height: 300px;
+        line-height: 300px;
+      }
+
+      .swiper .swiper-slide:nth-child(2n) {
+        height: 500px;
+        line-height: 500px;
+      }
+    </style>
 </head>
 <body>
 <br>
