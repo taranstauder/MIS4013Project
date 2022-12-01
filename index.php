@@ -19,24 +19,14 @@
         background-color: black;
       }
       .img {
-        height: auto;
-        width: auto;
+        height: 600px;
+        width: 400px;
         }
 
       .swiper-slide {
-        height: auto;
-        width: auto;
+        height: 600px;
+        width: 400px;
       }
-
-      .swiper .swiper-slide {
-        height: auto;
-        line-height: auto;
-      }
-
-      //.swiper .swiper-slide:nth-child(2n) {
-        //height: auto;
-        //line-height: auto;
-      //}
     </style>
 </head>
 <body>
