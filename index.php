@@ -8,16 +8,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <style>
       html,
-      body {
-        position: relative;
-        height: 100%;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
       .swiper {
         width: auto;
         height: auto;
