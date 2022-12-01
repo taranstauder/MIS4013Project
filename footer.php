@@ -6,6 +6,7 @@
   left: 0;
   bottom: 0;
   text-align: center;
+  background: black;
   color: white;
 }
 </style>
