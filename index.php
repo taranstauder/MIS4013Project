@@ -16,6 +16,7 @@
       .swiper {
         width: auto;
         height: auto;
+        background-color: black;
       }
 
       .swiper-slide {
@@ -81,7 +82,6 @@
         },
       });
     </script>
-<?php include("background.php");?>
 <?php include("footer.php");?>
 
 </body>
