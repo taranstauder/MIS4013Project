@@ -51,9 +51,9 @@ body {
 </div>
 </nav>
 <style>
-  .container-fluid{
-	  display: inline-block;
-	  list-style-type: none;
+  .container-xxl{
+display: inline-block;
+    align-items: center;
 	}
  </style>
 <br>
