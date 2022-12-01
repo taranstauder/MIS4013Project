@@ -40,10 +40,10 @@
         },
         slidesPerView: 3,
         spaceBetween: 30,
-        effect: "fade",
         slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
+        effect: "fade",
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
