@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="background: black;">
 <head> <?php include("header.php");?></head>
 <body>
 
