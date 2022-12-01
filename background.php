@@ -1,1 +1,3 @@
-background-color: black;
+<style>
+  background-color: black;
+</style>
