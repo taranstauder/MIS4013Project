@@ -5,7 +5,6 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  width: 100%;
   font-family: Helvetica;
   text-align: center;
 }
