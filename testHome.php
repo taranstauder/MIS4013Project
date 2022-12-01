@@ -13,24 +13,13 @@
         height: 100%;
       }
 
-      body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
-        margin: 0;
-        padding: 0;
-      }
-
       .swiper {
-        width: 100%;
+        width: auto;
         height: auto;
       }
 
       .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
+        float: center;
       }
 
       .swiper .swiper-slide {
@@ -58,7 +47,7 @@
         <div class="swiper-slide"><img src="https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg"></div>
         <div class="swiper-slide"><img src="https://c8.alamy.com/comp/E5MCMW/elf-will-ferrell-2003-c-new-linecourtesy-everett-collection-E5MCMW.jpg"></div>
         <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51iA8isg59L._AC_SY580_.jpg"></div>
-        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/M/MV5BYzI0N2M4ZDItY2VmOS00OGVhLWI2NmUtOGU0NWM3MGZkM2Y3XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg"></div>
+        <div class="swiper-slide"><img src="https://thumbs.dreamstime.com/b/harry-potter-warner-brothers-studio-tour-london-uk-entrance-where-filmed-actual-film-series-movie-poster-sorcerers-164168768.jpg"></div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
