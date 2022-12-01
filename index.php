@@ -36,8 +36,7 @@
     </style>
 </head>
 <body>
-<br>
-<br>
+
 
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
