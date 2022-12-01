@@ -31,7 +31,7 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><img src="https://static.toiimg.com/photo/msid-5348868/5348868.jpg?26276"></div>
-        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Smile_%282022_film%29.jpg/220px-Smile_%282022_film%29.jpg"></div>
+        <div class="swiper-slide"><img src="https://i.ebayimg.com/thumbs/images/g/AkMAAOSwjjhi8Hn5/s-l1600.jpg"></div>
         <div class="swiper-slide"><img src="https://m.media-amazon.com/images/M/MV5BMjNiMDA0OWQtZGY1MC00N2EwLTkxNDYtYmVkNTk1NzJiZjFmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg"></div>
         <div class="swiper-slide"><img src="https://static.wixstatic.com/media/f86f23_b88ab82f5782484181d473d0ae304dd5~mv2.jpg/v1/fill/w_408,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/the-notebook1.jpg"></div>
         <div class="swiper-slide"><img src="https://c8.alamy.com/comp/B3KR2H/star-wars-poster-for-the-1977-tcflucasfilm-film-B3KR2H.jpg"></div>
