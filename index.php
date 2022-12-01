@@ -19,32 +19,15 @@
       }
 
       .swiper {
-        width: 800px;
+        width: auto;
+        height: auto;
         background: black;
       }
       .swiper-slide {
-        height: 300px;
-        background: #882525;
-        line-height: 300px;
-        text-align: center;
-      }
-      .swiper-slide:nth-child(2) {
-        background: #8acc7d;
-      }
-      .swiper-slide:nth-child(3) {
-        background: #b7cc7d;
-      }
-      .swiper-slide:nth-child(4) {
-        background: #9eb75c;
-      }
-      .swiper-slide:nth-child(5) {
-        background: #7da8cc;
-      }
-      .swiper-slide:nth-child(6) {
-        background: #96cc7d;
-      }
-      .swiper-slide:nth-child(7) {
-        background: #cc7dae;
+        height: auto;
+        background: black;
+        img-align: center;
+
       }
     </style>
 </head>
