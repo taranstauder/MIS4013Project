@@ -37,16 +37,16 @@ body {
 <div class="container-fluid" style="font-family: helvetica;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Home") {?>active<?php }?>" href="index.php">Home Page</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "#") {?>active<?php }?>" href="index.php">Home Page</a>
 	  </li>
 	<li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Movies") {?>active<?php }?>" href="movies.php">Movies</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "#") {?>active<?php }?>" href="movies.php">Movies</a>
 	  </li>
 	<li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Trailers") {?>active<?php }?>" href="trailer.php">Trailers</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "#") {?>active<?php }?>" href="trailer.php">Trailers</a>
 	  </li>		
 	  <li class="nav-item">
-	    <a class="nav-link <?php if ($CURRENT_PAGE == "Reviews") {?>active<?php }?>" href="reviews.php">Reviews</a>
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "#") {?>active<?php }?>" href="reviews.php">Reviews</a>
 	  </li>
 </div>
 </nav>
