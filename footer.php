@@ -7,7 +7,7 @@
   bottom: 0;
   width: 100%;
   text-align: center;
-  color: auto;
+  color: white;
 }
 </style>
 
