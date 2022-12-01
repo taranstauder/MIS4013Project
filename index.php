@@ -10,7 +10,8 @@
       html,
       body {
         position: relative;
-        height: 100%;
+        height: auto;
+        background-color: black;
       }
 
       body {
