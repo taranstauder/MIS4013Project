@@ -23,7 +23,7 @@
       }
     </style>
 </head>
-<body>
+<body style="background-color: black;">
 
 
     <div class="swiper mySwiper">
