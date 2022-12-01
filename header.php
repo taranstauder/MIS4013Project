@@ -52,7 +52,7 @@ body {
 </nav>
 <style>
   .container-fluid{
-	  position: fixed;
+	  margin: auto;
 	}
  </style>
 <br>
