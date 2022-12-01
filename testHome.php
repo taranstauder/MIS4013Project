@@ -53,11 +53,11 @@
         <div class="swiper-slide"><img src="https://static.toiimg.com/photo/msid-5348868/5348868.jpg?26276"></div>
         <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7f/Smile_%282022_film%29.jpg/220px-Smile_%282022_film%29.jpg"></div>
         <div class="swiper-slide"><img src="https://m.media-amazon.com/images/M/MV5BMjNiMDA0OWQtZGY1MC00N2EwLTkxNDYtYmVkNTk1NzJiZjFmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg"></div>
-        <div class="swiper-slide"><img src="https://static.wikia.nocookie.net/jurassicpark/images/c/ce/JP-MoviePoster.jpg/revision/latest?cb=20220215213506"></div>
-        <div class="swiper-slide"><img src="https://static.wikia.nocookie.net/starwars/images/5/53/SWTLJExpandedEdition.jpg/revision/latest?cb=20180212223228"></div>
+        <div class="swiper-slide"><img src="https://static.wixstatic.com/media/f86f23_b88ab82f5782484181d473d0ae304dd5~mv2.jpg/v1/fill/w_408,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/the-notebook1.jpg"></div>
+        <div class="swiper-slide"><img src="https://c8.alamy.com/comp/B3KR2H/star-wars-poster-for-the-1977-tcflucasfilm-film-B3KR2H.jpg"></div>
         <div class="swiper-slide"><img src="https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg"></div>
         <div class="swiper-slide"><img src="https://c8.alamy.com/comp/E5MCMW/elf-will-ferrell-2003-c-new-linecourtesy-everett-collection-E5MCMW.jpg"></div>
-        <div class="swiper-slide"><img src="https://upload.wikimedia.org/wikipedia/en/8/8c/Indiana_Jones_and_the_Last_Crusade.png"></div>
+        <div class="swiper-slide"><img src="https://m.media-amazon.com/images/I/51iA8isg59L._AC_SY580_.jpg"></div>
         <div class="swiper-slide"><img src="https://m.media-amazon.com/images/M/MV5BYzI0N2M4ZDItY2VmOS00OGVhLWI2NmUtOGU0NWM3MGZkM2Y3XkEyXkFqcGdeQXVyMDc2NTEzMw@@._V1_.jpg"></div>
       </div>
       <div class="swiper-button-next"></div>
@@ -72,7 +72,7 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         autoplay: {
-          delay: 2500,
+          delay: 4500,
           disableOnInteraction: false,
         },
         slidesPerView: 3,
