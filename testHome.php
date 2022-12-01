@@ -28,10 +28,10 @@
         line-height: auto;
       }
 
-      .swiper .swiper-slide:nth-child(2n) {
-        height: 500px;
-        line-height: 500px;
-      }
+      //.swiper .swiper-slide:nth-child(2n) {
+        //height: 500px;
+        //line-height: 500px;
+      //}
     </style>
 </head>
 <body>
