@@ -24,8 +24,8 @@
         }
 
       .swiper-slide {
-        height: 600px;
-        width: 600px;
+        height: auto;
+        width: auto;
       }
 
       .swiper .swiper-slide {
@@ -34,8 +34,8 @@
       }
 
       //.swiper .swiper-slide:nth-child(2n) {
-        //height: 500px;
-        //line-height: 500px;
+        //height: auto;
+        //line-height: auto;
       //}
     </style>
 </head>
