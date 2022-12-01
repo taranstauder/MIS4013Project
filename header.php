@@ -53,6 +53,7 @@ body {
 <style>
   .container-fluid{
 	  margin: auto;
+	  text-align: center;
 	}
  </style>
 <br>
