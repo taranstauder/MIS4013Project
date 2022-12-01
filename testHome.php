@@ -61,12 +61,13 @@
     <script>
       var swiper = new Swiper(".mySwiper", {
         autoplay: {
-          delay: 4500,
+          delay: 3500,
           disableOnInteraction: false,
         },
         slidesPerView: 3,
         watchSlidesProgress: true,
         spaceBetween: 30,
+        effect: fade,
         //slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
