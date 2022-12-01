@@ -10,7 +10,7 @@
       html,
       .swiper {
         width: auto;
-        height: auto;
+        height: 75%;
         background: black;
       }
       .swiper-slide {
