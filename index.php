@@ -58,6 +58,7 @@
         slidesPerView: 3,
         watchSlidesProgress: true,
         spaceBetween: 30,
+        effect: "fade",
         //slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
