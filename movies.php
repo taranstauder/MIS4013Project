@@ -51,7 +51,6 @@ $conn->close();
 ?>
   </tbody>
     </table>
- 
-</body>
     <?php include("footer.php");?>
+</body>
 </html>
