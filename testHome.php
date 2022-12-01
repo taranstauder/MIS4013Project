@@ -23,8 +23,8 @@
       }
 
       .swiper .swiper-slide {
-        height: 300px;
-        line-height: 300px;
+        height: auto;
+        line-height: auto;
       }
 
       .swiper .swiper-slide:nth-child(2n) {
