@@ -1,6 +1,6 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> Final Project </title>
+    <title>Final Project</title>
  <div style="background-color: black; font-family: helvetica; text-align: center;" class="jumbotron">
 
 <style>
@@ -28,7 +28,7 @@ body {
 </style>
 </head>
 <body>
-
+<br>
 <h1 class="glow">MOVIES Я US🎬</h1>
      
 </body>
