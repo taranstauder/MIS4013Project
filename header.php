@@ -1,8 +1,37 @@
 <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> Final Project </title>
-    <div style="background-color: black; font-family: helvetica; text-align: center; color: white;" class="jumbotron">
-	    <h1>Movies Я Us🎬</h1>
+ <div style="background-color: black; font-family: helvetica; text-align: center;" class="jumbotron">
+
+<style>
+body {
+  background-color: black;
+  font-family: Helvetica;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e6bc, 0 0 40px #00e6bc, 0 0 50px #00e6bc, 0 0 60px #00e6bc, 0 0 70px #00e6bc;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00e6e2, 0 0 40px #00e6e2, 0 0 50px #00e6e2, 0 0 60px #00e6e2, 0 0 70px #00e6e2, 0 0 80px #00e6e2;
+  }
+}
+</style>
+</head>
+<body>
+
+<h1 class="glow">MOVIES Я US🎬</h1>
+     
+</body>
 	    
 	    <nav class="navbar navbar-expand-lg bg-clear" style="margin: auto;">
 <div class="container-fluid" style="font-family: helvetica;">
