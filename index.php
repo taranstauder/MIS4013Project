@@ -6,26 +6,48 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 />
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      <style>
+    <style>
       html,
       body {
         position: relative;
         height: 100%;
       }
 
-      .swiper {
-        width: auto;
-        height: auto;
-        background-color: black;
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
       }
-      .img {
-        height: 600px;
-        width: 400px;
-        }
 
+      .swiper {
+        width: 800px;
+      }
       .swiper-slide {
-        height: 600px;
-        width: 400px;
+        height: 300px;
+        background: #882525;
+        line-height: 300px;
+        text-align: center;
+      }
+      .swiper-slide:nth-child(2) {
+        background: #8acc7d;
+      }
+      .swiper-slide:nth-child(3) {
+        background: #b7cc7d;
+      }
+      .swiper-slide:nth-child(4) {
+        background: #9eb75c;
+      }
+      .swiper-slide:nth-child(5) {
+        background: #7da8cc;
+      }
+      .swiper-slide:nth-child(6) {
+        background: #96cc7d;
+      }
+      .swiper-slide:nth-child(7) {
+        background: #cc7dae;
       }
     </style>
 </head>
