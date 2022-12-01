@@ -3,6 +3,6 @@
 
 <br>
 <div class="display-5">
-  <p>Thank you for visiting our project page!</p>
+  <p>BDT Final Project ©</p>
   
 </div>
