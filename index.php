@@ -17,10 +17,12 @@
         height: auto;
         background: black;
       }
-      .swiper-slide img{
-        height: auto;
-        width: auto;
-      }
+      .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
     </style>
 </head>
 <body style="background-color: black;">
