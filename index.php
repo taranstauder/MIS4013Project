@@ -93,9 +93,7 @@
           prevEl: ".swiper-button-prev",
         },
       });
-    </script>
-  
-<?php include("footer.php");?>
-
+  </script>
 </body>
+  <?php include("footer.php");?>
 </html>
