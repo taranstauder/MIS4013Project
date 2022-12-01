@@ -19,7 +19,7 @@
       }
 
       .swiper-slide {
-        float: center;
+        display: block;
       }
 
       .swiper .swiper-slide {
@@ -67,7 +67,6 @@
         slidesPerView: 3,
         watchSlidesProgress: true,
         spaceBetween: 30,
-        effect: "smooth",
         //slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
