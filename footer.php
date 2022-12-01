@@ -11,5 +11,6 @@
 </style>
 
 <div class="footer">
+<br>  
   <p>BDT Final Project ©</p>
 </div>
