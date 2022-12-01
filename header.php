@@ -13,6 +13,9 @@
 	<li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="movies.php">Movies</a>
 	  </li>
+	<li class="nav-item">
+	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="trailer.php">Trailers</a>
+	  </li>		
 	  <li class="nav-item">
 	    <a class="nav-link <?php if ($CURRENT_PAGE == "Main Page") {?>active<?php }?>" href="reviews.php">Reviews</a>
 	  </li>
