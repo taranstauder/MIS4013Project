@@ -1,5 +1,3 @@
-https://cdn.jsdelivr.net/npm/@glidejs/glide
-
 <!DOCTYPE html>
 <html>
 <head> <?php include("header.php");?>
