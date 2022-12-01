@@ -33,7 +33,7 @@ body {
      
 </body>
 	    
-	    <nav class="navbar navbar-expand-lg bg-clear" style="margin: auto;">
+	    <nav class="navbar navbar-expand-lg bg-clear" style="display: inline-block; align-items: center;">
 <div class="container-fluid" style="font-family: helvetica;">
 	<ul class="nav nav-pills nav-fill">
           <li class="nav-item">
@@ -50,12 +50,6 @@ body {
 	  </li>
 </div>
 </nav>
-<style>
-  .container-xxl{
-display: inline-block;
-    align-items: center;
-	}
- </style>
 <br>
     </div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
