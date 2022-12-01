@@ -18,6 +18,10 @@
         height: auto;
         background-color: black;
       }
+      .img {
+        height: auto;
+        width: auto;
+        }
 
       .swiper-slide {
         height: 600px;
