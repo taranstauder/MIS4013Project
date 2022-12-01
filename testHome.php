@@ -65,8 +65,9 @@
           disableOnInteraction: false,
         },
         slidesPerView: 3,
+        watchSlidesProgress: true,
         spaceBetween: 30,
-        slidesPerGroup: 3,
+        //slidesPerGroup: 3,
         loop: true,
         loopFillGroupWithBlank: true,
         pagination: {
