@@ -10,15 +10,11 @@
       html,
       body {
         position: relative;
-        height: auto;
-        background-color: black;
+        height: 100%;
       }
 
       body {
-        background: #eee;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #000;
+        background: black;
         margin: 0;
         padding: 0;
       }
@@ -98,6 +94,7 @@
         },
       });
     </script>
+  
 <?php include("footer.php");?>
 
 </body>
