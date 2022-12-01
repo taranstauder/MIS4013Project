@@ -26,8 +26,10 @@
       .swiper-slide {
         height: auto;
         background: black;
-        img-align: center;
-
+      }
+      .swiper-slide img{
+        height: auto;
+        width: auto;
       }
     </style>
 </head>
