@@ -2,8 +2,6 @@
 <html style="background-color: black;">
 <head> <?php include("header.php");?></head>
 <body>
-<br>
-<br>
 <table class="table table-striped">
   <thead>
     <tr>
