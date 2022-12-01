@@ -14,13 +14,13 @@
       }
 
       body {
-        background: black;
         margin: 0;
         padding: 0;
       }
 
       .swiper {
         width: 800px;
+        background: black;
       }
       .swiper-slide {
         height: 300px;
