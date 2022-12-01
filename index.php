@@ -81,6 +81,7 @@
         },
       });
     </script>
+<?php include("background.php");?>
 <?php include("footer.php");?>
 
 </body>
