@@ -3,8 +3,14 @@
 <style>
 .footer {
   position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-family: Helvetica;
   text-align: center;
 }
+</style>
+
 <div class="footer">
   <p>BDT Final Project ©</p>
 </div>
