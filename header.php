@@ -52,8 +52,8 @@ body {
 </nav>
 <style>
   .container-fluid{
-	  margin: auto;
-	  text-align: center;
+	  display: inline-block;
+	  list-style-type: none;
 	}
  </style>
 <br>
