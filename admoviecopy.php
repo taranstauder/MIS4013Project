@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head> <?php include("header.php");?></head>
-  
-<body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <style>
       html,
       .swiper {
@@ -22,6 +24,7 @@
     object-fit: cover;
 }
     </style>
+<body>
 <br>
 <br>
 <table class="table table-striped">
