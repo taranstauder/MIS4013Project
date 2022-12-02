@@ -18,6 +18,10 @@
         height: auto;
         background: black;
       }
+      .img:hover {
+        transform: scale(.85);
+        background-color: blue;
+      }
       .swiper-slide img {
     display: block;
     width: 100%;
