@@ -36,6 +36,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New review added.</div>';
       break;
+    case 'Edit':
+      $sqlEdit = "update Review set rtitle=?, description=?, rating=? where rtitle=?";
+      $stmtEdit = $conn->prepare($sqlEdit);
+      $stmtEdit->bind_param("ssis", $_POST['titleedit'], $_POST['descredit'],$_POST['ratedit'], $_POST['iid']);
+      $stmtEdit->execute();
+      echo '<div class="alert alert-success" role="alert">Review edited.</div>';
+      break;
+    case 'Delete':
+      $sqlDelete = "delete from Review where rtitle=?";
+      $stmtDelete = $conn->prepare($sqlDelete);
+      $stmtDelete->bind_param("s", $_POST['iid']);
+      $stmtDelete->execute();
+      echo '<div class="alert alert-success" role="alert">Review deleted.</div>';
+      break;
   }
 
 }
@@ -50,6 +64,13 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>  
+          <tr>
+            <td><?=$row["title"]?></td>
+            <td><?=$row["rtitle"]?></td>
+            <td><?=$row["description"]?></td>
+            <td><?=$row["rating"]?></td>
+           
+          </tr>
           
 <?php
   }
