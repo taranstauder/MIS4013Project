@@ -52,7 +52,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       break;
   }
 }
+         ?>
 
+<?php
 $sql = "SELECT genre, title, year, summary from Movie";
 $result = $conn->query($sql);
 
