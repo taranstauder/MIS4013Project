@@ -53,10 +53,9 @@ $conn->close();
   </tbody>
     </table>
   <?php 
- echo '<form method="POST" action="movieindex.php">
-    <input type="Admin Login"/>
-  </form>';
-?>
+  <a href="http://programminghead.com">
+  <button>Click Me</button>
+</a>
     <?php include("footer.php");?>
 </body>
 </html>
