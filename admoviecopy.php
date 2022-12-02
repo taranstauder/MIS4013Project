@@ -66,20 +66,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["year"]?></td>
     <td><?=$row["summary"]?></td>
   </tr>
-
-<?php
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>
-  </tbody>
-    </table>
-      <br />
-  
-  
-   <tr>
+  <tr>
             <td><?=$row["customer_id"]?></td>
             <td><a href="customer-orders.php?id=<?=$row["customer_id"]?>"><?=$row["fname"]?></a></td>
             <td>
@@ -117,7 +104,16 @@ $conn->close();
               </form>
             </td>
           </tr>
-  
+<?php
+  }
+} else {
+  echo "0 results";
+}
+$conn->close();
+?>
+  </tbody>
+    </table>
+      <br />
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
         Add New
