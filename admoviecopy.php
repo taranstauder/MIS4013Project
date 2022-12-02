@@ -11,6 +11,8 @@
       <th>Title</th>
       <th>Year</th>
       <th>Summary</th>
+        <th></th>
+            <th></th>
     </tr>
     
   </thead>
