@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		
 		if(($user['username'] == $username) &&
 			($user['password'] == $password)) {
-				header("location: adminpage.php");
+				header("location: admoviecopy.php");
 		}
 		else {
 			echo "<script language='javascript'>";
