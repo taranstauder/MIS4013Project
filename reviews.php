@@ -2,7 +2,7 @@
 <html style="background: black;">
   <title>Reviews</title>
 <head> <?php include("header.php");?></head>
-<body>
+<body style="background-color: black;">
 <table class="table table-striped">
   <thead>
     <tr>
