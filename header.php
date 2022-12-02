@@ -29,7 +29,7 @@ body {
 </head>
 <body>
 <br>
-<h1 class="glow">MOVIES Я US🎬</h1>
+	<a href="index.php"><h1 class="glow">MOVIES Я US🎬</h1></a>
      
 </body>
 	    
