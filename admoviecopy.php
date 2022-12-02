@@ -77,6 +77,47 @@ $conn->close();
   </tbody>
     </table>
       <br />
+  
+  
+   <tr>
+            <td><?=$row["customer_id"]?></td>
+            <td><a href="customer-orders.php?id=<?=$row["customer_id"]?>"><?=$row["fname"]?></a></td>
+            <td>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editCustomer<?=$row["customer_id"]?>">
+                Edit
+              </button>
+              <div class="modal fade" id="editCustomer<?=$row["customer_id"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editCustomer<?=$row["customer_id"]?>Label" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="editCustomer<?=$row["customer_id"]?>Label">Edit Customer</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form method="post" action="">
+                        <div class="mb-3">
+                          <label for="editCustomer<?=$row["customer_id"]?>Name" class="form-label">Name</label>
+                          <input type="text" class="form-control" id="editCustomer<?=$row["customer_id"]?>Name" aria-describedby="editCustomer<?=$row["customer_id"]?>Help" name="iName" value="<?=$row['fname']?>">
+                          <div id="editCustomer<?=$row["customer_id"]?>Help" class="form-text">Enter the customer's first name.</div>
+                        </div>
+                        <input type="hidden" name="iid" value="<?=$row['customer_id']?>">
+                        <input type="hidden" name="saveType" value="Edit">
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+             <form method="post" action="">
+                <input type="hidden" name="iid" value="<?=$row["customer_id"]?>" />
+                <input type="hidden" name="saveType" value="Delete">
+                <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
+              </form>
+            </td>
+          </tr>
+  
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
         Add New
