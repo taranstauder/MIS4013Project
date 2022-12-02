@@ -11,8 +11,8 @@
       <th>Title</th>
       <th>Year</th>
       <th>Summary</th>
-        <th></th>
-            <th></th>
+      <th></th>
+      <th></th>
     </tr>
     
   </thead>
@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
          ?>
 
 <?php
-$sql = "SELECT genre, title, year, summary from Movie";
+$sql = "SELECT movid,genre, title, year, summary from Movie";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
