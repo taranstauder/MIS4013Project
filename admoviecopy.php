@@ -67,39 +67,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["summary"]?></td>
   </tr>
   <tr>
-            <td><?=$row["movid"]?></td>
-            <td><a href="review.php?id=<?=$row["movid"]?>"><?=$row["title"]?></a></td>
-            <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editMovie<?=$row["movid"]?>">
-                Edit
-              </button>
-              <div class="modal fade" id="editMovie<?=$row["movid"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editMovie<?=$row["movid"]?>Label" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editMovie<?=$row["movid"]?>Label">Edit Movie</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form method="post" action="">
-                        <div class="mb-3">
-                          <label for="editMovie<?=$row["movid"]?>Name" class="form-label">Enter the genre</label>
-                          <input type="text" class="form-control" id="editMovie<?=$row["movid"]?>Name" aria-describedby="editMovie<?=$row["movid"]?>Help" name="iName" value="<?=$row['genre']?>">
-                        </div>
-                        <div class="mb-3">
-                          <label for="editMovie<?=$row["movid"]?>Name" class="form-label">Enter the genre</label>
-                          <input type="text" class="form-control" id="editMovie<?=$row["movid"]?>Name" aria-describedby="editMovie<?=$row["movid"]?>Help" name="iName" value="<?=$row['genre']?>">
-                        </div>
-                        <input type="hidden" name="iid" value="<?=$row['movid']?>">
-                        <input type="hidden" name="saveType" value="Edit">
-                        <input type="submit" class="btn btn-primary" value="Submit">
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td>
+<td><?=$row["movid"]?></td>
              <form method="post" action="">
                 <input type="hidden" name="iid" value="<?=$row["movid"]?>" />
                 <input type="hidden" name="saveType" value="Delete">
