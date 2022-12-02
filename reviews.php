@@ -36,20 +36,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New review added.</div>';
       break;
-    case 'Edit':
-      $sqlEdit = "update Review set rtitle=?, description=?, rating=? where rtitle=?";
-      $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssis", $_POST['titleedit'], $_POST['descredit'],$_POST['ratedit'], $_POST['iid']);
-      $stmtEdit->execute();
-      echo '<div class="alert alert-success" role="alert">Review edited.</div>';
-      break;
-    case 'Delete':
-      $sqlDelete = "delete from Review where rtitle=?";
-      $stmtDelete = $conn->prepare($sqlDelete);
-      $stmtDelete->bind_param("s", $_POST['iid']);
-      $stmtDelete->execute();
-      echo '<div class="alert alert-success" role="alert">Review deleted.</div>';
-      break;
   }
 
 }
@@ -64,53 +50,6 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>  
-          <tr>
-            <td><?=$row["title"]?></td>
-            <td><?=$row["rtitle"]?></td>
-            <td><?=$row["description"]?></td>
-            <td><?=$row["rating"]?></td>
-            <td>
-              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
-                Edit
-              </button>
-              <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["rtitle"]?>Label" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Review</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <form method="post" action="">
-                        <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Title</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rtitle"]?>Help" name="titleedit" value="<?=$row['rtitle']?>">
-                        </div>
-                        <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Description</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="descredit" value="<?=$row['description']?>">
-                        </div>
-                        <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
-                        </div>
-                        <input type="hidden" name="iid" value="<?=$row['rtitle']?>">
-                       <input type="hidden" name="saveType" value="Edit">
-                        <input type="submit" class="btn btn-primary" value="Submit">
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </td>
-            <td>
-             <form method="post" action="">
-                <input type="hidden" name="iid" value="<?=$row["rtitle"]?>" />
-                <input type="hidden" name="saveType" value="Delete">
-                <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
-              </form>
-            </td>
-          </tr>
           
 <?php
   }
