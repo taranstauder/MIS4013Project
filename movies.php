@@ -52,9 +52,9 @@ $conn->close();
 ?>
   </tbody>
     </table>
- <?php 
- echo '<form method="GET" action="movieindex.php">
-    <input type="button"/>
+<?php 
+ echo '<form method="POST" action="movieindex.php">
+    <input type="submit"/>
   </form>';
 ?>
     <?php include("footer.php");?>
