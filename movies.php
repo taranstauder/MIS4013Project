@@ -9,7 +9,7 @@
       <th>Movie</th>
       <th>Starring Actor</th>
       <th>Director</th>
-      <th>Review Description</th>
+      <th>Summary</th>
       <th>Review Rating</th>
     </tr>
   </thead>
@@ -27,7 +27,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT m.title, a.name, d.dirname, r.description, r.rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid";
+$sql = "SELECT m.title, a.name, d.dirname, m.summary, r.rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -38,7 +38,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["title"]?></td>
     <td><?=$row["name"]?></td>
     <td><?=$row["dirname"]?></td>
-    <td><?=$row["description"]?></td>
+    <td><?=$row["summary"]?></td>
     <td><?=$row["rating"]?></td>
   </tr>
 <?php
