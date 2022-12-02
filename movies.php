@@ -52,6 +52,13 @@ $conn->close();
 ?>
   </tbody>
     </table>
+  <button id="myButton" class="float-left submit-button" >Admin Login</button>
+
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        action="admoviecopy.php";
+    };
+</script>
     <?php include("footer.php");?>
 </body>
 </html>
