@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html style="background-color: black;">
 <head> <?php include("header.php");?></head>
-<body>
+<body style="background-color: black;">
 <br>
 <br>
 <table class="table table-striped">
