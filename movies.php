@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="background-color: black;">
+  <title>Movies</title>
 <head> <?php include("header.php");?></head>
 <body>
 <table class="table table-striped">
