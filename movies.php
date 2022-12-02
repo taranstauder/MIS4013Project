@@ -52,6 +52,11 @@ $conn->close();
 ?>
   </tbody>
     </table>
+  <?php 
+ echo '<form method="POST" action="admoviecopy.php">
+    <input type="submit"/>
+  </form>';
+?>
     <?php include("footer.php");?>
 </body>
 </html>
