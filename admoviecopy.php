@@ -77,28 +77,28 @@ if ($result->num_rows > 0) {
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Movie</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["movid"]?>Label">Edit Movie</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Movie Genre</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rtitle"]?>Help" name="genreedit" value="<?=$row['rtitle']?>">
+                          <label for="editOrders<?=$row["movid"]?>Name" class="form-label">Movie Genre</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["movid"]?>Name" aria-describedby="editOrders<?=$row["genre"]?>Help" name="genreedit" value="<?=$row['genre']?>">
                         </div>
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Movie Title</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="titleedit" value="<?=$row['description']?>">
+                          <label for="editOrders<?=$row["movid"]?>Name" class="form-label">Movie Title</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["movid"]?>Name" aria-describedby="editOrders<?=$row["title"]?>Help" name="titleedit" value="<?=$row['title']?>">
                         </div>
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Movie Year</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="yearedit" value="<?=$row['rating']?>">
+                          <label for="editOrders<?=$row["movid"]?>Name" class="form-label">Movie Year</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["movid"]?>Name" aria-describedby="editOrders<?=$row["year"]?>Help" name="yearedit" value="<?=$row['year']?>">
                         </div>
                           <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Movie Summary</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="summaryedit" value="<?=$row['rating']?>">
+                          <label for="editOrders<?=$row["movid"]?>Name" class="form-label">Movie Summary</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["movid"]?>Name" aria-describedby="editOrders<?=$row["summary"]?>Help" name="summaryedit" value="<?=$row['summary']?>">
                         </div>
-                        <input type="hidden" name="iid" value="<?=$row['rtitle']?>">
+                        <input type="hidden" name="iid" value="<?=$row['movid']?>">
                        <input type="hidden" name="saveType" value="Edit">
                         <input type="submit" class="btn btn-primary" value="Submit">
                       </form>
