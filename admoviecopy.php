@@ -36,6 +36,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New movie added.</div>';
       break;
+    case 'Edit':
+      $sqlEdit = "update Movie set fname=? where movid=?";
+      $stmtEdit = $conn->prepare($sqlEdit);
+      $stmtEdit->bind_param("ssis", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
+      $stmtEdit->execute();
+      echo '<div class="alert alert-success" role="alert">Movie edited.</div>';
+      break;
+    case 'Delete':
+      $sqlDelete = "delete from Movie where movid=?";
+      $stmtDelete = $conn->prepare($sqlDelete);
+      $stmtDelete->bind_param("i", $_POST['iid']);
+      $stmtDelete->execute();
+      echo '<div class="alert alert-success" role="alert">Movie deleted.</div>';
+      break;
   }
 }
 
