@@ -10,6 +10,8 @@
       <th>Review Title</th>
       <th>Description</th>
       <th>Rating</th>
+      <th></th>
+            <th></th>
     </tr>
   </thead>
   <tbody>
