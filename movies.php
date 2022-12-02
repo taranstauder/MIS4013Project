@@ -52,10 +52,6 @@ $conn->close();
 ?>
   </tbody>
     </table>
-  <?php 
-  <a href="http://programminghead.com">
-  <button>Click Me</button>
-</a>
     <?php include("footer.php");?>
 </body>
 </html>
