@@ -52,13 +52,11 @@ $conn->close();
 ?>
   </tbody>
     </table>
-  <button id="myButton" class="float-left submit-button" >Admin Login</button>
-
-<script type="text/javascript">
-    document.getElementById("myButton").onclick = function () {
-        action="movieindex.php";
-    };
-</script>
+ <?php 
+ echo '<form method="POST" action="movieindex.php">
+    <input type="button"/>
+  </form>';
+?>
     <?php include("footer.php");?>
 </body>
 </html>
