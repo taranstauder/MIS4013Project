@@ -1,7 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head> <?php include("header.php");?></head>
+  
 <body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <style>
+      html,
+      .swiper {
+        width: auto;
+        height: auto;
+        background: black;
+      }
+      .swiper-slide {
+        height: auto;
+        background: black;
+      }
+      .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    </style>
 <br>
 <br>
 <table class="table table-striped">
@@ -12,6 +32,7 @@
       <th>Year</th>
       <th>Summary</th>
     </tr>
+    
   </thead>
   <tbody>
     <?php
