@@ -53,7 +53,7 @@ $conn->close();
   </tbody>
     </table>
  <?php 
- echo '<form method="POST" action="movieindex.php">
+ echo '<form method="GET" action="movieindex.php">
     <input type="button"/>
   </form>';
 ?>
