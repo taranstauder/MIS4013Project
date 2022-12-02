@@ -1,29 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: black;">
 <head> <?php include("header.php");?></head>
-   <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-/>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <style>
-      html,
-      .swiper {
-        width: auto;
-        height: auto;
-        background: black;
-      }
-      .swiper-slide {
-        height: auto;
-        background: black;
-      }
-      .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-    </style>
 <body>
 <br>
 <br>
