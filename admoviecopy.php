@@ -103,7 +103,7 @@ if ($result->num_rows > 0) {
             </td>
             <td>
              <form method="post" action="">
-                <input type="hidden" name="iid" value="<?=$row["rtitle"]?>" />
+                <input type="hidden" name="iid" value="<?=$row["movid"]?>" />
                 <input type="hidden" name="saveType" value="Delete">
                 <input type="submit" class="btn" onclick="return confirm('Are you sure?')" value="Delete">
               </form>
