@@ -39,9 +39,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       echo '<div class="alert alert-success" role="alert">New movie added.</div>';
       break;
     case 'Edit':
-      $sqlEdit = "update Movie set fname=? where movid=?";
+      $sqlEdit = "update Movie set genre=?, title=?, year=?, summary=? where movid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssis", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
+      $stmtEdit->bind_param("ssis", $_POST['genreedit'],$_POST['titleedit'],$_POST['yearedit'],$_POST['summaryedit']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Movie edited.</div>';
       break;
@@ -70,29 +70,33 @@ if ($result->num_rows > 0) {
     <td><?=$row["year"]?></td>
     <td><?=$row["summary"]?></td>
     <td>
-<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["movid"]?>">
                 Edit
               </button>
-              <div class="modal fade" id="editOrders<?=$row["title"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["rtitle"]?>Label" aria-hidden="true">
+              <div class="modal fade" id="editOrders<?=$row["movid"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["movid"]?>Label" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Review</h1>
+                      <h1 class="modal-title fs-5" id="editOrders<?=$row["rtitle"]?>Label">Edit Movie</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                       <form method="post" action="">
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Title</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rtitle"]?>Help" name="titleedit" value="<?=$row['rtitle']?>">
+                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Movie Genre</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rtitle"]?>Help" name="genreedit" value="<?=$row['rtitle']?>">
                         </div>
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Review Description</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="descredit" value="<?=$row['description']?>">
+                          <label for="editOrders<?=$row["rtitle"]?>Name" class="form-label">Movie Title</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["description"]?>Help" name="titleedit" value="<?=$row['description']?>">
                         </div>
                         <div class="mb-3">
-                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Rating</label>
-                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="ratedit" value="<?=$row['rating']?>">
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Movie Year</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="yearedit" value="<?=$row['rating']?>">
+                        </div>
+                          <div class="mb-3">
+                          <label for="editOrders<?=$row["title"]?>Name" class="form-label">Movie Summary</label>
+                          <input type="text" class="form-control" id="editOrders<?=$row["rtitle"]?>Name" aria-describedby="editOrders<?=$row["rating"]?>Help" name="summaryedit" value="<?=$row['rating']?>">
                         </div>
                         <input type="hidden" name="iid" value="<?=$row['rtitle']?>">
                        <input type="hidden" name="saveType" value="Edit">
