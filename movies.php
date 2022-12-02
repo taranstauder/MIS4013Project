@@ -56,7 +56,7 @@ $conn->close();
 
 <script type="text/javascript">
     document.getElementById("myButton").onclick = function () {
-        action="admoviecopy.php";
+        action="movieindex.php";
     };
 </script>
     <?php include("footer.php");?>
