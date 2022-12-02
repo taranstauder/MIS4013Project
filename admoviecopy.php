@@ -41,7 +41,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     case 'Edit':
       $sqlEdit = "update Movie set genre=?, title=?, year=?, summary=? where movid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssis", $_POST['genreedit'],$_POST['titleedit'],$_POST['yearedit'],$_POST['summaryedit'], $_POST['iid']);
+      $stmtEdit->bind_param("ssisi", $_POST['genreedit'],$_POST['titleedit'],$_POST['yearedit'],$_POST['summaryedit'], $_POST['iid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Movie edited.</div>';
       break;
