@@ -57,11 +57,11 @@ if ($conn->connect_error) {
         $rateres =mysqli_query($conn, $ratequery);    
             while($data = mysqli_fetch_assoc($rateres)){
                 $rate_db[] = $data;
-                $sum_rates[] = $data['rate'];
+                $sum_rates[] = $data['rating'];
             }
             if(count($rating)){
-                $rate_times = count($rating);
-                $sum_rates = array_sum($rating);
+                $rate_times = count($rateres);
+                $sum_rates = array_sum($rateres);
                 $rate_value = $sum_rates/$rate_times;
                 $rate_bg = (($rate_value)/5)*100;
             }else{
