@@ -54,7 +54,7 @@ if ($conn->connect_error) {
     //defining Product id
     $product_id=1;
         $ratequery = "SELECT rating FROM rate review revid = 'revid' "; 
-        $rateres =mysqli($conn, $ratequery);    
+        $rateres =mysqli_query($conn, $ratequery);    
             while($data = mysqli_fetch_assoc($rateres)){
                 $rate_db[] = $data;
                 $sum_rates[] = $data['rating'];
