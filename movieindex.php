@@ -31,6 +31,8 @@
 
 			<input class="button" type="submit"
 					name="login" value="Sign In">
+			<br>
+			<br>
 			<?php include("footer.php");?>
 		</div>
 	</form>
