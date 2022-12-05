@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+	<?php include("header.php");?>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href=
 "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
