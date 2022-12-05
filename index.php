@@ -32,14 +32,14 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=5PSNL1qE6VY"><img src="https://m.media-amazon.com/images/M/MV5BNjA3NGExZDktNDlhZC00NjYyLTgwNmUtZWUzMDYwMTZjZWUyXkEyXkFqcGdeQXVyMTU1MDM3NDk0._V1_FMjpg_UX1000_.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://i.ebayimg.com/thumbs/images/g/AkMAAOSwjjhi8Hn5/s-l1600.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://m.media-amazon.com/images/M/MV5BMjNiMDA0OWQtZGY1MC00N2EwLTkxNDYtYmVkNTk1NzJiZjFmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://static.wixstatic.com/media/f86f23_b88ab82f5782484181d473d0ae304dd5~mv2.jpg/v1/fill/w_408,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/the-notebook1.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://c8.alamy.com/comp/B3KR2H/star-wars-poster-for-the-1977-tcflucasfilm-film-B3KR2H.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://c8.alamy.com/comp/E5MCMW/elf-will-ferrell-2003-c-new-linecourtesy-everett-collection-E5MCMW.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://m.media-amazon.com/images/I/51iA8isg59L._AC_SY580_.jpg"></a></div>
-        <div class="swiper-slide"><a href="movies.php"><img src="https://thumbs.dreamstime.com/b/harry-potter-warner-brothers-studio-tour-london-uk-entrance-where-filmed-actual-film-series-movie-poster-sorcerers-164168768.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=BcDK7lkzzsU"><img src="https://i.ebayimg.com/thumbs/images/g/AkMAAOSwjjhi8Hn5/s-l1600.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=giXco2jaZ_4"><img src="https://m.media-amazon.com/images/M/MV5BMjNiMDA0OWQtZGY1MC00N2EwLTkxNDYtYmVkNTk1NzJiZjFmXkEyXkFqcGdeQXVyMTQyMTMwOTk0._V1_.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=FC6biTjEyZw"><img src="https://static.wixstatic.com/media/f86f23_b88ab82f5782484181d473d0ae304dd5~mv2.jpg/v1/fill/w_408,h_614,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/the-notebook1.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=gBKx63Y6rG4"><img src="https://c8.alamy.com/comp/B3KR2H/star-wars-poster-for-the-1977-tcflucasfilm-film-B3KR2H.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=kVrqfYjkTdQ"><img src="https://c8.alamy.com/comp/PXNB80/titanic-original-movie-poster-PXNB80.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=a54yC1etmVc"><img src="https://c8.alamy.com/comp/E5MCMW/elf-will-ferrell-2003-c-new-linecourtesy-everett-collection-E5MCMW.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=CZ1CATNbXg0"><img src="https://m.media-amazon.com/images/I/51iA8isg59L._AC_SY580_.jpg"></a></div>
+        <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=VyHV0BRtdxo"><img src="https://thumbs.dreamstime.com/b/harry-potter-warner-brothers-studio-tour-london-uk-entrance-where-filmed-actual-film-series-movie-poster-sorcerers-164168768.jpg"></a></div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
