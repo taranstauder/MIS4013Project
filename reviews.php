@@ -6,12 +6,10 @@
 <table class="table" style="color:white;">
   <thead style="white-space: nowrap;">
     <tr>
-      <th>Movie Title</th>
+      <th>Movie</th>
       <th>Review Title</th>
       <th>Description</th>
       <th>Rating</th>
-      <th></th>
-            <th></th>
     </tr>
   </thead>
   <tbody>
@@ -69,7 +67,6 @@ if ($result->num_rows > 0) {
             <td><?=$row["rtitle"]?></td>
             <td><?=$row["description"]?></td>
             <td><?=$row["rating"]?></td>
-           
           </tr>
           
 <?php
