@@ -36,9 +36,9 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
   <tr>
-    <td><?=$row["title"]?></td>
-    <td><?=$row["name"]?></td>
-    <td><?=$row["dirname"]?></td>
+    <td style="white-space: nowrap;"><?=$row["title"]?></td>
+    <td style="white-space: nowrap;"><?=$row["name"]?></td>
+    <td style="white-space: nowrap;"><?=$row["dirname"]?></td>
     <td><?=$row["summary"]?></td>
     <td style="text-align:center;"><?=$row["rating"]?></td>
   </tr>
