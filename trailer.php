@@ -5,7 +5,7 @@
     <?php include("header.php");?>
 </head>
 <body>
-    <form action="disTrailer.php" id="trailerForm" method="get">
+    <form action="displayTrailer.php" id="trailerForm" method="get">
         <select name="movieTrailer" id="movieTrailer" form="trailerForm">
         <?php
 $servername = "159.89.47.44";
