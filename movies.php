@@ -7,7 +7,7 @@
   <thead style="align-content: left; white-space: nowrap;">
     <tr>
       <th>Movie</th>
-      <th>Starring Actor</th>
+      <th>Star Actor</th>
       <th>Director</th>
       <th>Summary</th>
       <th>Average Rating</th>
