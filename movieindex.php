@@ -13,6 +13,7 @@
 </head>
 
 <body>
+	<div> 
 	<form action="validate.php" method="post">
 		<div class="login-box" style="color: white;">
 			<h1>Login</h1>
@@ -33,5 +34,7 @@
 					name="login" value="Sign In">
 		</div>
 	</form>
+	</div>
+	<?php include("footer.php");?>
 </body>
 </html>
