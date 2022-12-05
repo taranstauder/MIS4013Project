@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: black;">
 
 <head>
 	<?php include("header.php");?>
@@ -34,5 +34,5 @@
 		</div>
 	</form>
 </body>
-
+<?php include("footer.php");?>
 </html>
