@@ -19,7 +19,7 @@
 
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" placeholder="username"
+				<input type="text" placeholder="Username"
 						name="username" value="" style="color:white;">
 			</div>
 
