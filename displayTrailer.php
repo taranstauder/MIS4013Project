@@ -32,6 +32,12 @@ switch ($mName) {
     case "Wall E":
         echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/CZ1CATNbXg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         break;
+    case "Star Wars":
+        echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/L-_xHEv0l-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        break;
+    case "The Notebook":
+        echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/FC6biTjEyZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        break;
 }
 ?>
 <table class="table" style="color:white;">
