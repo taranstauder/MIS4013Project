@@ -6,7 +6,7 @@
 <table class="table" style="color:white;">
   <thead style="white-space: nowrap;">
     <tr>
-      <th>Movie</th>
+      <th style="text-align:center;">Movie</th>
       <th>Review Title</th>
       <th>Description</th>
       <th>Rating</th>
@@ -63,7 +63,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>  
           <tr>
-            <td><?=$row["title"]?></td>
+            <td style="text-align:center;"><?=$row["title"]?></td>
             <td><?=$row["rtitle"]?></td>
             <td><?=$row["description"]?></td>
             <td style="text-align:center;"><?=$row["rating"]?></td>
