@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["name"]?></td>
     <td><?=$row["dirname"]?></td>
     <td><?=$row["summary"]?></td>
-    <td><?=$row["rating"]?></td>
+    <td style="text-align:center;"><?=$row["rating"]?></td>
   </tr>
 <?php
   }
