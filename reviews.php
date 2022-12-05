@@ -4,7 +4,7 @@
 <head> <?php include("header.php");?></head>
 <body style="background-color: black;">
 <table class="table" style="color:white;">
-  <thead>
+  <thead style="white-space: nowrap;">
     <tr>
       <th>Movie Title</th>
       <th>Review Title</th>
