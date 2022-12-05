@@ -2,7 +2,7 @@
 <html style="background-color: black;">
   <title>Movies</title>
 <head> <?php include("header.php");?></head>
-<body style="background-color: black;">
+<body style="background-color: black; color:white;">
 <table class="table table-striped" style="color:white;">
   <thead>
     <tr>
