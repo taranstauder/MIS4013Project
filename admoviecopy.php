@@ -16,7 +16,7 @@
     </tr>
     
   </thead>
-  <tbody style="color: white;">
+  <tbody>
     <?php
 $servername = "159.89.47.44";
 $username = "davyddov_davy0000";
@@ -126,7 +126,7 @@ $conn->close();
   </tbody>
     </table>
       <br />
-  <div style="color: white;""
+  <div style="color: white;">
       <!-- Button trigger modal -->
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
         Add New
