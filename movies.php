@@ -52,8 +52,8 @@ $conn->close();
   </tbody>
     </table>
 <?php 
- echo '<form method="POST" action="movieindex.php">
-    <input type="submit" value="Admin Login" style="text-align:center;"/>
+ echo '<form method="POST" action="movieindex.php" style="text-align:center;">
+    <input type="submit" value="Admin Login"/>
   </form>';
 ?>
     <?php include("footer.php");?>
