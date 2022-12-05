@@ -52,7 +52,7 @@ $conn->close();
   </tbody>
     </table>
 <?php 
- echo '<form method="POST" action="movieindex.php" style="text-align:center;">
+ echo '<form method="POST" action="movieindex.php" style="text-align:center; animation: glow 1s ease-in-out infinite alternate;">
     <input type="submit" value="Admin Login"/>
   </form>';
 ?>
