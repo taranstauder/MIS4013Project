@@ -12,8 +12,8 @@
 	<title>Login Page</title>
 </head>
 
-<body style="background-color: white;">
-	<form action="validate.php" method="post">
+<body style="background-color: black;">
+	<form action="validate.php" method="post" style="color: white;">
 		<div class="login-box">
 			<h1>Login</h1>
 
@@ -33,8 +33,5 @@
 					name="login" value="Sign In">
 		</div>
 	</form>
-	<br>
-<?php include("footer.php");?>
-	<br>
 </body>
 </html>
