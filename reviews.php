@@ -55,7 +55,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
           
 <?php
-$sql = "SELECT title, rating, description, rtitle from Review r join Movie m on m.movid=r.movid sort by title";
+$sql = "SELECT title, rating, description, rtitle from Review r join Movie m on m.movid=r.movid order by title";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
