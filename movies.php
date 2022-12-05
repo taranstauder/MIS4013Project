@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: black;">
+<html style="background-color: black; color: white;">
   <title>Movies</title>
 <head> <?php include("header.php");?></head>
 <body style="background-color: black; color:white;">
