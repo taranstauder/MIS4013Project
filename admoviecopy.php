@@ -70,7 +70,7 @@ if ($result->num_rows > 0) {
     <td><?=$row["year"]?></td>
     <td><?=$row["summary"]?></td>
     <td>
-<button type="button" style="color:white;" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["movid"]?>">
+<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["movid"]?>">
                 Edit
               </button>
               <div class="modal fade" id="editOrders<?=$row["movid"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["movid"]?>Label" aria-hidden="true">
