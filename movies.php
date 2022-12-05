@@ -3,8 +3,8 @@
   <title>Movies</title>
 <head> <?php include("header.php");?></head>
 <body style="background-color: black; color:white;">
-<table class="table table-dark table-hover">
-  <thead>
+<table class="table table-hover">
+  <thead class="table-dark">
     <tr>
       <th>Movie</th>
       <th>Starring Actor</th>
