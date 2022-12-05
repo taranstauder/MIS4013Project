@@ -29,7 +29,7 @@ if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
 ?>
             <option value="one">
-              <div>?=$row["title"]?</div>
+              <div>?=$row["m.title"]?</div>
           </option>
     <?php
   }
