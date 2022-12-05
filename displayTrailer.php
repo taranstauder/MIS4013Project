@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Trailer</title>
 </head>
-<body style="background-color: black; color:white; display: flex;">
+<body style="background-color: black; color:white;">
 <?php include("header.php");?>
+<div style="display: flex;"
 <?php
 $mName = $_GET["movieTrailer"];
 switch ($mName) {
@@ -90,6 +91,7 @@ $conn->close();
 ?>
   </tbody>
     </table>
+    </div>
     <?php include("footer.php");?>
 </body>
 </html>
