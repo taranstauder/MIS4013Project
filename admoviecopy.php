@@ -4,7 +4,7 @@
 <body style="background-color: black;">
 <br>
 <br>
-<table class="table table-striped">
+<table class="table" style="color: white;">
   <thead>
     <tr>
       <th>Genre</th>
