@@ -27,7 +27,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT m.title, a.name, d.dirname, m.summary, r.rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid"; 
+$sql = "SELECT m.title, a.name, d.dirname, m.summary, AVE(r.rating) as Rating from Movie m join Cast c on m.movid=c.movid join Actor a on c.actid=a.actid join Director d on m.movid=d.movid join Review r on m.movid=r.movid"; 
   
 $result = $conn->query($sql);
 
