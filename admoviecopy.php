@@ -133,7 +133,7 @@ $conn->close();
 
       <!-- Modal -->
       <div class="modal fade" id="addMovie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMovieLabel" aria-hidden="true">
-        <div class="modal-dialog" style="color:black" >
+        <div class="modal-dialog" style="color:black;" >
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="addMovieLabel">Add a Movie</h1>
