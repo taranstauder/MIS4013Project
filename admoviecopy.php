@@ -4,7 +4,8 @@
 <body style="background-color: black;">
 <br>
 <br>
-<table style="color:white" class="table table-striped">
+  <div style="color:white;">
+<table class="table table-striped">
   <thead>
     <tr>
       <th>Genre</th>
@@ -17,6 +18,7 @@
     
   </thead>
   <tbody>
+  </div>
     <?php
 $servername = "159.89.47.44";
 $username = "davyddov_davy0000";
