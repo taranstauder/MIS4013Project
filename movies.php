@@ -53,7 +53,7 @@ $conn->close();
     </table>
 <?php 
  echo '<form method="POST" action="movieindex.php">
-    <input type="submit" value="Admin Login style="align-content:center;"/>
+    <input type="submit" value="Admin Login" style="align-content:center;"/>
   </form>';
 ?>
     <?php include("footer.php");?>
