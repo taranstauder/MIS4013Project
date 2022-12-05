@@ -28,7 +28,9 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
-            <option value="row">?=$row["title"]?</option>
+            <option value="one">
+              <div>?=$row["title"]?</div>
+          </option>
     <?php
   }
 } else {
