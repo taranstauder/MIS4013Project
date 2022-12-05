@@ -2,8 +2,8 @@
 <html style="background: black;">
   <title>Reviews</title>
 <head> <?php include("header.php");?></head>
-<body style="background-color: black;">
-<table class="table table-striped">
+<body style="background-color: black; color: white;">
+<table class="table">
   <thead>
     <tr>
       <th>Movie Title</th>
