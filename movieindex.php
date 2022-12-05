@@ -12,9 +12,9 @@
 	<title>Login Page</title>
 </head>
 
-<body style="background-color: black;">
-	<form action="validate.php" method="post" style="color: white;">
-		<div class="login-box">
+<body>
+	<form action="validate.php" method="post">
+		<div class="login-box" style="color: white;">
 			<h1>Login</h1>
 
 			<div class="textbox">
