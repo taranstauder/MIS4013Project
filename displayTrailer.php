@@ -65,7 +65,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    if($row["title"] == $mName)
+    if($row["title"] == $mName) {
 ?>
   <tr>
     <td><?=$row["title"]?></td>
@@ -75,6 +75,7 @@ if ($result->num_rows > 0) {
     <td style="text-align:center;"><?=$row["rating"]?></td>
   </tr>
 <?php
+  }
   }
 } else {
   echo "0 results";
