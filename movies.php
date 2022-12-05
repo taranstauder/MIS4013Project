@@ -10,7 +10,7 @@
       <th>Starring Actor</th>
       <th>Director</th>
       <th>Summary</th>
-      <th>Review Rating</th>
+      <th>Average Rating</th>
     </tr>
   </thead>
   <tbody>
