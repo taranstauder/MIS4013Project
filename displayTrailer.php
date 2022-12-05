@@ -8,7 +8,6 @@
 </head>
 <body style="background-color: black; color:white;">
 <?php include("header.php");?>
-<div style="display: flex;"
 <?php
 $mName = $_GET["movieTrailer"];
 switch ($mName) {
@@ -91,7 +90,6 @@ $conn->close();
 ?>
   </tbody>
     </table>
-    </div>
     <?php include("footer.php");?>
 </body>
 </html>
