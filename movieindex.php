@@ -15,7 +15,7 @@
 <body>
 	<form action="validate.php" method="post">
 		<div class="login-box" style="color: white;">
-			<h1>Login</h1>
+			<h1>Admin Login</h1>
 
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
@@ -31,9 +31,6 @@
 
 			<input class="button" type="submit"
 					name="login" value="Sign In">
-			<br>
-			<br>
-			<?php include("footer.php");?>
 		</div>
 	</form>
 </body>
