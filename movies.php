@@ -4,7 +4,7 @@
 <head> <?php include("header.php");?></head>
 <body style="background-color: black; color:white;">
 <table class="table table-hover">
-  <thead class="table-dark">
+  <thead style="align-content: left;">
     <tr>
       <th>Movie</th>
       <th>Starring Actor</th>
