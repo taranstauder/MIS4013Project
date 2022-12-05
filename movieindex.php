@@ -15,11 +15,11 @@
 <body>
 	<form action="validate.php" method="post">
 		<div class="login-box" style="color: white;">
-			<h1>Admin Login</h1>
+			<h1>Login</h1>
 
 			<div class="textbox">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<input type="text" placeholder="Username"
+				<input type="text" placeholder="username"
 						name="username" value="" style="color:white;">
 			</div>
 
