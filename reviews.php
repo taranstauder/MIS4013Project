@@ -66,7 +66,7 @@ if ($result->num_rows > 0) {
             <td><?=$row["title"]?></td>
             <td><?=$row["rtitle"]?></td>
             <td><?=$row["description"]?></td>
-            <td><?=$row["rating"]?></td>
+            <td style="text-align:center;"><?=$row["rating"]?></td>
           </tr>
           
 <?php
