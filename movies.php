@@ -3,7 +3,7 @@
   <title>Movies</title>
 <head> <?php include("header.php");?></head>
 <body style="background-color: black; color:white;">
-<table class="table table-dark table-striped">
+<table class="table table-dark table-hover">
   <thead>
     <tr>
       <th>Movie</th>
