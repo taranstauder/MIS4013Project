@@ -26,7 +26,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 $iid = $_GET['id'];
-$sql = "SELECT title, rating, description, rtitle from Review r join Movie m on m.movid=r.movid where r.movid="; . $iid;
+$sql = "SELECT title, rating, description, rtitle from Review r join Movie m on m.movid=r.movid where r.movid=" . $iid;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
