@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {
       </table>
       <br />
      
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders" style="color: green;">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders" style="align-content:center;">
         Add New
       </button>
       <!-- Modal -->
