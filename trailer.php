@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html style="background: black;">
+  <link rel="stylesheet" href=trailer.css>
   <title>Trailers
     </title>
     <?php include("header.php");?>
