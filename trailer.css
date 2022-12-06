@@ -7,5 +7,7 @@ body {
 }
 form {
   background-color: black;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-contents: center;
 }
