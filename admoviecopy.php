@@ -7,14 +7,13 @@
 <table class="table" style="color: white;">
   <thead>
     <tr>
-      <th>Genre</th>
       <th>Title</th>
+      <th>Genre</th>
       <th>Year</th>
       <th>Summary</th>
       <th></th>
       <th></th>
     </tr>
-    
   </thead>
   <tbody>
     <?php
@@ -64,13 +63,14 @@ if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
 ?>
+<div style="color:white;">
   <tr>
-    <td><?=$row["genre"]?></td>
     <td><?=$row["title"]?></td>
+    <td><?=$row["genre"]?></td>
     <td><?=$row["year"]?></td>
     <td><?=$row["summary"]?></td>
     <td>
-<button type="button" style="color:auto;" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["movid"]?>">
+<button type="button" style="color: white;" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["movid"]?>">
                 Edit
               </button>
               <div class="modal fade" id="editOrders<?=$row["movid"]?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="editOrders<?=$row["movid"]?>Label" aria-hidden="true">
@@ -115,6 +115,7 @@ if ($result->num_rows > 0) {
               </form>
             </td>
           </tr>
+    </div>
 
 <?php
   }
