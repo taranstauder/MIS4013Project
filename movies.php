@@ -40,7 +40,7 @@ if ($result->num_rows > 0) {
     <td style="white-space: nowrap;"><?=$row["name"]?></td>
     <td style="white-space: nowrap;"><?=$row["dirname"]?></td>
     <td><?=$row["summary"]?></td>
-    <td style="text-align:center; text-decoration:none;"><a href="movie_review.php?id=<?=$row["movid"]?>"><?=$row["rating"]?></td>
+    <td style="text-align:center;"><a style="text-decoration:none;" href="movie_review.php?id=<?=$row["movid"]?>"><?=$row["rating"]?></td>
   </tr>
 <?php
   }
