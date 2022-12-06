@@ -27,11 +27,6 @@
     </style>
 </head>
 <body style="background-color: black;">
-<audio autoplay controls>
-  <source src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" type="audio/mp3">
-</audio>
-
-  
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNjA3NGExZDktNDlhZC00NjYyLTgwNmUtZWUzMDYwMTZjZWUyXkEyXkFqcGdeQXVyMTU1MDM3NDk0._V1_FMjpg_UX1000_.jpg"></a></div>
@@ -48,6 +43,9 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
+  <audio autoplay controls style="background-color:black; color:white;">
+  <source src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" type="audio/mp3">
+</audio>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
