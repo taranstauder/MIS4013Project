@@ -84,10 +84,6 @@ if ($result->num_rows > 0) {
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders">
         Add New
       </button>
-  <style>
-    .btn{
-      position: absolute;
-    }
   </style>
       <!-- Modal -->
       <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true">
@@ -127,7 +123,7 @@ if ($result->num_rows > 0) {
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="rateadd" required><br>
               </div>
                  <input type="hidden" name="saveType" value="Add">
-                 <button type="submit" class="btn btn-primary">Submit</button>
+                 <button type="submit" class="btn btn-primary" style="text-align:center;">Submit</button>
            </form>
             </div>
           </div>
