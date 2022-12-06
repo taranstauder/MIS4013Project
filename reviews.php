@@ -81,12 +81,12 @@ if ($result->num_rows > 0) {
       </table>
       <br />
      
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders" style="align-content:center;">
         Add New
       </button>
      
       <!-- Modal -->
-      <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true" style="align-content:center;">
+      <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
