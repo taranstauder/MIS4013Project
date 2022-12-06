@@ -28,6 +28,17 @@
 </head>
 <body style="background-color: black;">
 
+var source = "https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3"
+ var audio = document.createElement("audio");
+ //
+ audio.autoplay = true;
+ //
+ audio.load()
+ audio.addEventListener("load", function() { 
+     audio.play(); 
+ }, true);
+ audio.src = source;
+  
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="https://www.youtube.com/watch?v=5PSNL1qE6VY" target="_blank"><img src="https://m.media-amazon.com/images/M/MV5BNjA3NGExZDktNDlhZC00NjYyLTgwNmUtZWUzMDYwMTZjZWUyXkEyXkFqcGdeQXVyMTU1MDM3NDk0._V1_FMjpg_UX1000_.jpg"></a></div>
