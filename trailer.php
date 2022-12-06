@@ -5,9 +5,9 @@
     <?php include("header.php");?>
 </head>
 <body>
-    <form action="displayTrailer.php" id="trailerForm" method="get">
+    <form action="displayTrailer.php" id="trailerForm" method="get" style="align-content: center;">
         <select name="movieTrailer" id="movieTrailer" form="trailerForm">
-          <option value="none">---Choose a movie---</option>
+          <option value="none" style="text-align: center;">Select a Movie</option>
         <?php
 $servername = "159.89.47.44";
 $username = "davyddov_davy0000";
