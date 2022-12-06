@@ -27,12 +27,12 @@
     </style>
 </head>
 <body style="background-color: black;">
-<audio src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" id="my_audio" loop="loop"></audio>
-  <script type="text/javascript">
-    window.onload=function(){
-      document.getElementById("my_audio").play();
-    }
-  </script>
+<audio src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" id="my_audio"></audio>
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.2;
+  audio.play();
+});
   
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
