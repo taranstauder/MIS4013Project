@@ -125,10 +125,12 @@ $conn->close();
   </tbody>
     </table>
       <br />
+  <div style="text-align: center;">
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie" style="text-align:center;">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
         Add New
       </button>
+  </div>
 
       <!-- Modal -->
       <div class="modal fade" id="addMovie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMovieLabel" aria-hidden="true">
