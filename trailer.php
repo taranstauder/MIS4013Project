@@ -6,8 +6,7 @@
     <?php include("header.php");?>
 </head>
 <body style="background-color:black;">
-  <div style="text-align:center; font-family: helvetica;">
-    <form action="displayTrailer.php" id="trailerForm" method="get">
+    <form action="displayTrailer.php" id="trailerForm" method="get" style="text-align:center; font-family: helvetica;">
         <select name="movieTrailer" id="movieTrailer" form="trailerForm">
           <option value="none" style="text-align: center;">Select a Movie</option>
         <?php
@@ -46,6 +45,7 @@ $conn->close();
              </select>                                         
     </form>   
   <br>
+  <div style="text-align:center; font-family: helvetica;">
   <input type="submit" value="Watch the trailer!">  
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
