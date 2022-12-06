@@ -49,7 +49,9 @@ $conn->close();
   </tbody>
     </table>
       <br>
-    <a href="movies.php" class="btn btn-primary" style="text-align: center;">Return to All Movies</a>
+  <div style="text-align: center;">
+    <a href="movies.php" class="btn btn-primary">Return to All Movies</a>
+  </div>
     <?php include("footer.php");?>
 </body>
 </html>
