@@ -25,19 +25,31 @@
     object-fit: cover;
 }
     </style>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body style="background-color: black;">
 
-var source = "https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3"
- var audio = document.createElement("audio");
- //
- audio.autoplay = true;
- //
- audio.load()
- audio.addEventListener("load", function() { 
-     audio.play(); 
- }, true);
- audio.src = source;
+var source = " https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3";
+var audio = new Audio(); // use the constructor in JavaScript, just easier that way
+audio.addEventListener("load", function() {
+  audio.play();
+}, true);
+audio.src = source;
+audio.autoplay = true; // add this
+
+$("#playBtn").click(function() {
+  audio.play();
+});
+
+$("#pauseBtn").click(function() {
+  audio.pause();
+});
+
+$("#stopBtn").click(function() {
+  audio.pause();
+  audio.currentTime = 0;
+});
   
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
