@@ -26,26 +26,26 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  switch ($_POST['saveType']) {
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+  switch ($_GET['saveType']) {
     case 'Add':
       $sqlAdd = "insert into Movie (genre, title, year, summary) values (?, ?, ?, ?)";
       $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("ssis", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
+      $stmtAdd->bind_param("ssis", $_GET['genre'],$_POST['title'],$_GET['year'],$_GET['summary']);
       $stmtAdd->execute();
       echo '<div class="alert alert-success" role="alert">New movie added.</div>';
       break;
     case 'Edit':
       $sqlEdit = "update Movie set genre=?, title=?, year=?, summary=? where movid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
-      $stmtEdit->bind_param("ssisi", $_POST['genreedit'],$_POST['titleedit'],$_POST['yearedit'],$_POST['summaryedit'], $_POST['iid']);
+      $stmtEdit->bind_param("ssisi", $_GET['genreedit'],$_POST['titleedit'],$_GET['yearedit'],$_GET['summaryedit'], $_GET['iid']);
       $stmtEdit->execute();
       echo '<div class="alert alert-success" role="alert">Movie edited.</div>';
       break;
     case 'Delete':
       $sqlDelete = "delete from Movie where movid=?";
       $stmtDelete = $conn->prepare($sqlDelete);
-      $stmtDelete->bind_param("i", $_POST['iid']);
+      $stmtDelete->bind_param("i", $_GET['iid']);
       $stmtDelete->execute();
       echo '<div class="alert alert-success" role="alert">Movie deleted.</div>';
       break;
