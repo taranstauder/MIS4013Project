@@ -9,6 +9,7 @@
 </head>
 <body style="background-color: black; color:white;">
 <?php include("header.php");?>
+<div id="videoPlayer">
 <?php
 $mName = $_GET["movieTrailer"];
 switch ($mName) {
@@ -44,6 +45,7 @@ switch ($mName) {
         break;
 }
 ?>
+    </div>
 <table class="table" style="color:white;">
   <thead style="align-content: left; white-space: nowrap;">
     <tr>
