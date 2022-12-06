@@ -27,12 +27,10 @@
     </style>
 </head>
 <body style="background-color: black;">
-<audio src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" id="my_audio"></audio>
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.2;
-  audio.play();
-});
+<audio autoplay controls>
+  <source src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" type="audio/mp3">
+</audio>
+
   
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
