@@ -86,8 +86,8 @@ if ($result->num_rows > 0) {
       </button>
      
       <!-- Modal -->
-      <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true">
-        <div class="modal-dialog" style="text-align:center;">
+      <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true" style="text-align:center;">
+        <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="addOrdersLabel">Enter the review:</h1>
