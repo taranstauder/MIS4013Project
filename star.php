@@ -2,20 +2,12 @@
 <html style="background: black;">
   <title>Reviews</title>
 <head> 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="dist/css/tabulator.min.css" rel="stylesheet">
+<script type="text/javascript" src="dist/js/tabulator.min.js"></script>
   <?php include("header.php");?></head>
 <body style="background-color: black;">
   
-  <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star"></span>
-<span class="fa fa-star"></span> 
-  <style>
-    .checked {
-  color: orange;
-}
-  </style>
+
 <table class="table table-striped">
   <thead>
     <tr>
@@ -81,7 +73,7 @@ if ($result->num_rows > 0) {
             <td><?=$row["title"]?></td>
             <td><?=$row["rtitle"]?></td>
             <td><?=$row["description"]?></td>
-            <td><?=$row["rating"]?></td>
+            <td formatter:"star", formatterParams:{stars:5},><?=$row["rating"]?></td>
             <td>
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#editOrders<?=$row["title"]?>">
                 Edit
