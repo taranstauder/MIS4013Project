@@ -44,8 +44,8 @@
       <div class="swiper-pagination"></div>
     </div>
   <br>
-  <div style="background-color:black; color:white; text-align:center;">
-  <audio autoplay>
+  <div style="text-align:center;">
+  <audio autoplay controls>
   <source src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" type="audio/mp3">
 </audio>
   </div>
