@@ -39,8 +39,6 @@ if ($result->num_rows > 0) {
             <td><?=$row["description"]?></td>
             <td style="text-align:center;"><?=$row["rating"]?></td>
           </tr>
-    <br>
-    <a href="movies.php" class="btn btn-primary">Return to All Movies</a>
 <?php
   }
 } else {
@@ -50,6 +48,8 @@ $conn->close();
 ?>
   </tbody>
     </table>
+      <br>
+    <a href="movies.php" class="btn btn-primary" style="text-align: center;">Return to All Movies</a>
     <?php include("footer.php");?>
 </body>
 </html>
