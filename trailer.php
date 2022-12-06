@@ -44,6 +44,7 @@ $conn->close();
 
              </select>
       <br>
+      <br>
    <input type="submit" value="Watch the trailer!" style="background:black; color:white;">                                              
     </form>          
   <br>
