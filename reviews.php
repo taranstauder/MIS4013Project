@@ -82,20 +82,20 @@ if ($result->num_rows > 0) {
       <br />
      <div style="text-align:center;">
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders">
-        Add New
+        New Review
       </button>
       <!-- Modal -->
       <div class="modal fade" id="addOrders" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addOrdersLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addOrdersLabel">Enter the review:</h1>
+              <h1 class="modal-title fs-5" id="addOrdersLabel" style="text-align:left;">Enter the review:</h1>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
              <form method="post" action="">
                  <div class="mb-3">
-                 <label for="movadd" class="form-label">Pick the movie</label>
+                 <label for="movadd" class="form-label" style="text-align:left;">Pick the movie</label>
                 <select class="form-select" aria-label="Select Product" id="movadd" name="movadd">
                    <?php
                     $instructorSql = "select * from Movie order by title";
@@ -110,15 +110,15 @@ if ($result->num_rows > 0) {
                  </select>
                </div>
                <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the review's title</label>
+               <label for="ordersname" class="form-label" style="text-align:left;">Enter the review's title</label>
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="titleadd" required><br>
               </div>
               <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the review's description</label>
+               <label for="ordersname" class="form-label" style="text-align:left;">Enter the review's description</label>
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="descadd" required><br>
               </div>
                <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the movie's rating (1-5)</label>
+               <label for="ordersname" class="form-label" style="text-align:left;">Enter the movie's rating (1-5)</label>
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="rateadd" required><br>
               </div>
                  <input type="hidden" name="saveType" value="Add">
