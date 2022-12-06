@@ -38,6 +38,9 @@ switch ($mName) {
     case "The Notebook":
         echo '<iframe width="560" height="315" src="https://www.youtube.com/embed/FC6biTjEyZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
         break;
+    case "none":
+        echo 'Please select return to the trailer page <a href="trailer.php">here</a> and select a movie from the list.
+        break;
 }
 ?>
 <table class="table" style="color:white;">
