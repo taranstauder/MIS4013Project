@@ -27,7 +27,7 @@
     </style>
 </head>
 <body style="background-color: black;">
-<audio autoplay controls>
+<audio autoplay>
   <source src="https://www.televisiontunes.com/uploads/audio/21st%20Century%20Fox.mp3" type="audio/mp3">
 </audio>
 
