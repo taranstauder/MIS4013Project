@@ -5,7 +5,7 @@
     </title>
     <?php include("header.php");?>
 </head>
-<body style="background-color:black;">
+<body style="background-color:black; text-align:center;">
     <form action="displayTrailer.php" id="trailerForm" method="get">
         <select name="movieTrailer" id="movieTrailer" form="trailerForm">
           <option value="none" style="text-align: center;">Select a Movie</option>
