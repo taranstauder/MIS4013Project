@@ -81,7 +81,7 @@ if ($result->num_rows > 0) {
       </table>
       <br />
      
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addOrders" style="text-align:center;">
         Add New
       </button>
      
@@ -119,7 +119,7 @@ if ($result->num_rows > 0) {
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="descadd" required><br>
               </div>
                <div class="mb-3">
-               <label for="ordersname" class="form-label">Enter the movie's rating</label>
+               <label for="ordersname" class="form-label">Enter the movie's rating (1-5)</label>
                <input type="text" class="form-control"  aria-describedby="nameHelp" name="rateadd" required><br>
               </div>
                  <input type="hidden" name="saveType" value="Add">
