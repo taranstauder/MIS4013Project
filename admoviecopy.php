@@ -28,13 +28,6 @@ if ($conn->connect_error) {
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   switch ($_POST['saveType']) {
-    case 'Add':
-      $sqlAdd = "insert into Movie (genre, title, year, summary) values (?, ?, ?, ?)";
-      $stmtAdd = $conn->prepare($sqlAdd);
-      $stmtAdd->bind_param("ssis", $_POST['genre'],$_POST['title'],$_POST['year'],$_POST['summary']);
-      $stmtAdd->execute();
-      echo '<div class="alert alert-success" role="alert">New movie added. Site engineers will soon add the movie trailer and poster to the site.</div>';
-      break;
     case 'Edit':
       $sqlEdit = "update Movie set genre=?, title=?, year=?, summary=? where movid=?";
       $stmtEdit = $conn->prepare($sqlEdit);
@@ -125,46 +118,7 @@ $conn->close();
   </tbody>
     </table>
       <br />
-  <div style="text-align: center;">
-      <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addMovie">
-        Add New
-      </button>
-  </div>
-
-      <!-- Modal -->
-      <div class="modal fade" id="addMovie" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="addMovieLabel" aria-hidden="true">
-        <div class="modal-dialog" style="color:black;" >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="addMovieLabel">Add a Movie</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <form method="post" action="">
-                <div class="mb-3">
-                  <label for="moviename" class="form-label">Enter the genre</label>
-                  <input type="text" class="form-control" id="moviename" aria-describedby="nameHelp" name="genre">
-                </div>
-                <div class="mb-3">
-               <label for="title" class="form-label">Enter the title</label>
-               <input type="text" class="form-control" id="title" aria-describedby="nameHelp" name="title" required>
-                </div>
-                <div class="mb-3">
-               <label for="year" class="form-label">Enter the Year</label>
-               <input type="text" class="form-control" id="year" aria-describedby="nameHelp" name="year" required>
-              </div>
-                <div class="mb-3">
-               <label for="summary" class="form-label">Enter the Summary</label>
-               <input type="text" class="form-control" id="summary" aria-describedby="nameHelp" name="summary" required>
-              </div>
-                <input type="hidden" name="saveType" value="Add">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <?php include("footer.php");?>
   </body>
